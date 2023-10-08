@@ -187,7 +187,7 @@ include 'include/navigation.php';
 
                     <div class="col-lg-6">
                         <div class="cont md-mb50">
-                        <h6 href="#">Shoeslab YouTube!</h6>
+                        <h6 href="#">Shoeslab YouTube!!</h6>
                             <h1 class="wow fw-700 mb-15 animated" style="visibility: visible;">Ingin Jadi Pengusaha
                                 Laundry Sepatu?</h1>
                             <p class="wow fadeInUp" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">Ayo, jangan lewatkan konten seru dan bermanfaat di channel YouTube kami! Langganan sekarang untuk mendapatkan update terbaru tentang video-video menarik, tutorial yang informatif, dan hiburan yang menghibur. Klik tombol subscribe dan ikuti perjalanan kami di YouTube!</p>
