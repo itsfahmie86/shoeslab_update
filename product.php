@@ -42,7 +42,8 @@ include 'include/navigation.php';
 
   <!-- ==================== End Slider ==================== -->
 
-  <!-- ==================== Start Portfolio ==================== -->
+  <!-- ==================== Start Products ==================== -->
+
   <section class="mblog section-padding">
     <div class="container-xxl">
       <div class="sec-head mb-80">
@@ -60,16 +61,16 @@ include 'include/navigation.php';
         <div class="product col-lg-4">
           <div class="post-box bg-dark">
             <div class="img">
-              <img src="assets/img/products/p1.jpg" class="rounded" alt="variant products" />
+              <img src="assets/img/products/Shoe-Deodorizer-100ml.jpg" class="rounded" alt="variant products" />
             </div>
             <div class="cont mt-30 flex">
               <div>
                 <h6>
-                  <a href="https://www.tokopedia.com/shoeslab-1?source=universe&st=product">Shoe Deodorizer 100ml</a><br />
-                  <a href="" class="mt-15 fz-24" style="color: white">Rp 40.000
+                  <a href="https://shopee.co.id/Parfume-Sepatu-Shoeslab-Shoe-Deodorizer-Anti-Bacterial-Formula-100ML-i.373562519.3679151349?xptdk=62ee50cc-03fd-44ba-ac3a-78d3da40984e">Shoe Deodorizer 100ml</a><br />
+                  <a class="mt-15 fz-24" style="color: white">Rp 40.000
                   </a>
                 </h6>
-                <a href="# " class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
+                <a class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
               </div>
             </div>
           </div>
@@ -78,16 +79,16 @@ include 'include/navigation.php';
         <div class="product col-lg-4">
           <div class="post-box bg-dark">
             <div class="img">
-              <img src="assets/img/products/p2.jpg" class="rounded" alt="variant products" />
+              <img src="assets/img/products/Shoe-Cleaner-100ml.jpg" class="rounded" alt="variant products" />
             </div>
             <div class="cont mt-30 flex">
               <div>
                 <h6>
-                  <a href="https://www.tokopedia.com/shoeslab-1?source=universe&st=product">Shoe Cleaner 100ml</a><br />
-                  <a href="" class="mt-15 fz-24" style="color: white">Rp 40.000
+                  <a href=" https://shopee.co.id/product/373562519/9213976370/">Shoe Cleaner 100ml</a><br />
+                  <a class="mt-15 fz-24" style="color: white">Rp 40.000
                   </a>
                 </h6>
-                <a href="# " class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
+                <a class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
               </div>
             </div>
           </div>
@@ -96,16 +97,16 @@ include 'include/navigation.php';
         <div class="product col-lg-4">
           <div class="post-box bg-dark">
             <div class="img">
-              <img src="assets/img/products/p3.jpg" class="rounded" alt="variant products" />
+              <img src="assets/img/products/Shoe-Cleaner-1000ml.jpg" class="rounded" alt="variant products" />
             </div>
             <div class="cont mt-30 flex">
               <div>
                 <h6>
-                  <a href="https://www.tokopedia.com/shoeslab-1?source=universe&st=product">Dirt Remover</a><br />
-                  <a href="" class="mt-15 fz-24" style="color: white">Rp 30.000
+                  <a href="https://shopee.co.id/product/373562519/9213976370/ ">Shoe Cleaner 1 Liter</a><br />
+                  <a class="mt-15 fz-24" style="color: white">Rp 84.000
                   </a>
                 </h6>
-                <a href="# " class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
+                <a class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
               </div>
             </div>
           </div>
@@ -114,16 +115,16 @@ include 'include/navigation.php';
         <div class="product col-lg-4">
           <div class="post-box bg-dark">
             <div class="img">
-              <img src="assets/img/products/p4.jpg" class="rounded" alt="variant products" />
+              <img src="assets/img/products/Shoe-Deodorizer-1-Liter.jpg" class="rounded" alt="variant products" />
             </div>
             <div class="cont mt-30 flex">
               <div>
                 <h6>
-                  <a href="https://www.tokopedia.com/shoeslab-1?source=universe&st=product">Detailing Brush</a><br />
-                  <a href="" class="mt-15 fz-24" style="color: white">Rp 50.000
+                  <a href="https://shp.ee/ugmtyr8">Shoe Deodorizer 1 Liter</a><br />
+                  <a class="mt-15 fz-24" style="color: white">Rp 100.000
                   </a>
                 </h6>
-                <a href="# " class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
+                <a class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
               </div>
             </div>
           </div>
@@ -132,16 +133,16 @@ include 'include/navigation.php';
         <div class="product col-lg-4">
           <div class="post-box bg-dark">
             <div class="img">
-              <img src="assets/img/products/p5.jpg" class="rounded" alt="variant products" />
+              <img src="assets/img/products/Dirt-Remover-60ml.jpg" class="rounded" alt="variant products" />
             </div>
             <div class="cont mt-30 flex">
               <div>
                 <h6>
-                  <a href="https://www.tokopedia.com/shoeslab-1?source=universe&st=product">Unyellowing</a><br />
-                  <a href="" class="mt-15 fz-24" style="color: white">Rp 40.000
+                  <a href="https://shopee.co.id/product/373562519/18415052398/">Dirt Remover 60ml</a><br />
+                  <a class="mt-15 fz-24" style="color: white">Rp 26.000
                   </a>
                 </h6>
-                <a href="# " class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
+                <a class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
               </div>
             </div>
           </div>
@@ -150,16 +151,16 @@ include 'include/navigation.php';
         <div class="product col-lg-4">
           <div class="post-box bg-dark">
             <div class="img">
-              <img src="assets/img/products/p6.jpg" class="rounded" alt="variant products" />
+              <img src="assets/img/products/Detailing-Brushwire.jpg" class="rounded" alt="variant products" />
             </div>
             <div class="cont mt-30 flex">
               <div>
                 <h6>
-                  <a href="https://www.tokopedia.com/shoeslab-1?source=universe&st=product">Waterbased Paint</a><br />
-                  <a href="" class="mt-15 fz-24" style="color: white">Rp 40.000
+                  <a href="https://shopee.co.id/product/373562519/19289397959/ ">Detailing Brushwire</a><br />
+                  <a class="mt-15 fz-24" style="color: white">Rp 30.000
                   </a>
                 </h6>
-                <a href="# " class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
+                <a class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
               </div>
             </div>
           </div>
@@ -168,16 +169,16 @@ include 'include/navigation.php';
         <div class="product col-lg-4">
           <div class="post-box bg-dark">
             <div class="img">
-              <img src="assets/img/products/p7.jpg" class="rounded" alt="variant products" />
+              <img src="assets/img/products/Premium-Brush.jpg" class="rounded" alt="variant products" />
             </div>
             <div class="cont mt-30 flex">
               <div>
                 <h6>
-                  <a href="https://www.tokopedia.com/shoeslab-1?source=universe&st=product">Basic Shoe Care</a><br />
-                  <a href="" class="mt-15 fz-24" style="color: white">Rp 30.000
+                  <a href=" https://shp.ee/kmegxc9">Premium Brush</a><br />
+                  <a class="mt-15 fz-24" style="color: white">Rp 35.000
                   </a>
                 </h6>
-                <a href="# " class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
+                <a class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
               </div>
             </div>
           </div>
@@ -186,16 +187,16 @@ include 'include/navigation.php';
         <div class="product col-lg-4">
           <div class="post-box bg-dark">
             <div class="img">
-              <img src="assets/img/products/p8.jpg" class="rounded" alt="variant products" />
+              <img src="assets/img/products/Unyellowing-Chemical.jpg" class="rounded" alt="variant products" />
             </div>
             <div class="cont mt-30 flex">
               <div>
                 <h6>
-                  <a href="https://www.tokopedia.com/shoeslab-1?source=universe&st=product">Shoe Cleaner 1Ltr</a><br />
-                  <a href="" class="mt-15 fz-24" style="color: white">Rp 50.000
+                  <a href="https://shopee.co.id/product/373562519/18815054427/ ">Unyellowing Chemical</a><br />
+                  <a class="mt-15 fz-24" style="color: white">Rp 46.000
                   </a>
                 </h6>
-                <a href="# " class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
+                <a class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
               </div>
             </div>
           </div>
@@ -204,20 +205,222 @@ include 'include/navigation.php';
         <div class="product col-lg-4">
           <div class="post-box bg-dark">
             <div class="img">
-              <img src="assets/img/products/p9.jpg" class="rounded" alt="variant products" />
+              <img src="assets/img/products/Waterbased-Paint-100ml.jpg" class="rounded" alt="variant products" />
             </div>
             <div class="cont mt-30 flex">
               <div>
                 <h6>
-                  <a href="https://www.tokopedia.com/shoeslab-1?source=universe&st=product">Shoe Cleaner</a><br />
-                  <a href="" class="mt-15 fz-24" style="color: white">Rp 40.000
+                  <a href="https://shopee.co.id/Cat-Sepatu-Waterbased-Shoeslab-100ml-Canvas-Suede-dan-Nubuck-i.373562519.21791891725?sp_atk=10189695-ac35-4b91-9e89-b0bea8aa5969&xptdk=10189695-ac35-4b91-9e89-b0bea8aa5969">Waterbased Paint 100ml</a><br />
+                  <a class="mt-15 fz-24" style="color: white">Rp 38.000
                   </a>
                 </h6>
-                <a href="# " class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
+                <a class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="product col-lg-4">
+          <div class="post-box bg-dark">
+            <div class="img">
+              <img src="assets/img/products/Basic-Shoecare.jpg" class="rounded" alt="variant products" />
+            </div>
+            <div class="cont mt-30 flex">
+              <div>
+                <h6>
+                  <a href="https://shopee.co.id/product/373562519/9891017302/">Basic Shoecare</a><br />
+                  <a class="mt-15 fz-24" style="color: white">Rp 75.000
+                  </a>
+                </h6>
+                <a class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product col-lg-4">
+          <div class="post-box bg-dark">
+            <div class="img">
+              <img src="assets/img/products/Leather-Wax.jpg" class="rounded" alt="variant products" />
+            </div>
+            <div class="cont mt-30 flex">
+              <div>
+                <h6>
+                  <a href="https://shopee.co.id/product/373562519/19615045097/">Leather Wax</a><br />
+                  <a class="mt-15 fz-24" style="color: white">Rp 40.000
+                  </a>
+                </h6>
+                <a class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product col-lg-4">
+          <div class="post-box bg-dark">
+            <div class="img">
+              <img src="assets/img/products/Microfiber.jpg" class="rounded" alt="variant products" />
+            </div>
+            <div class="cont mt-30 flex">
+              <div>
+                <h6>
+                  <a href="https://shopee.co.id/Lap-Microfiber-i.373562519.23446448553?sp_atk=0bbcfd37-3b32-4ae0-83f7-add5ecd6668e&xptdk=0bbcfd37-3b32-4ae0-83f7-add5ecd6668e">Microfiber</a><br />
+                  <a class="mt-15 fz-24" style="color: white">Rp 10.000
+                  </a>
+                </h6>
+                <a class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product col-lg-4">
+          <div class="post-box bg-dark">
+            <div class="img">
+              <img src="assets/img/products/Sisir-Suede.jpg" class="rounded" alt="variant products" />
+            </div>
+            <div class="cont mt-30 flex">
+              <div>
+                <h6>
+                  <a href="13.https://shopee.co.id/Sikat-Sepatu-Suede-Nubuck-i.373562519.23172822692?sp_atk=e8d0f6cc-beca-4d99-8f90-821aae8798a9">Sisir Suede</a><br />
+                  <a class="mt-15 fz-24" style="color: white">Rp 35.000
+                  </a>
+                </h6>
+                <a class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product col-lg-4">
+          <div class="post-box bg-dark">
+            <div class="img">
+              <img src="assets/img/products/Waterbased-1-Liter.jpg" class="rounded" alt="variant products" />
+            </div>
+            <div class="cont mt-30 flex">
+              <div>
+                <h6>
+                  <a href=" https://shopee.co.id/Cat-Sepatu-Waterbased-Shoeslab-1-Liter-Canvas-Suede-dan-Nubuck-i.373562519.11599860426?sp_atk=4df1ba68-c411-4670-9f7b-06b2398e03ab&xptdk=4df1ba68-c411-4670-9f7b-06b2398e03ab">Waterbased 1 Liter</a><br />
+                  <a class="mt-15 fz-24" style="color: white">Rp 220.000
+                  </a>
+                </h6>
+                <a class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product col-lg-4">
+          <div class="post-box bg-dark">
+            <div class="img">
+              <img src="assets/img/products/Premium-Kit.jpg" class="rounded" alt="variant products" />
+            </div>
+            <div class="cont mt-30 flex">
+              <div>
+                <h6>
+                  <a href=" https://shopee.co.id/Shoe-Premium-Kit-by-Shoeslab-i.373562519.10738752234?sp_atk=ffddf120-5462-4586-ba7c-67cba4a2da32&xptdk=ffddf120-5462-4586-ba7c-67cba4a2da32">Premium Kit</a><br />
+                  <a class="mt-15 fz-24" style="color: white">Rp 120.000
+                  </a>
+                </h6>
+                <a class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product col-lg-4">
+          <div class="post-box bg-dark">
+            <div class="img">
+              <img src="assets/img/products/Nylon-Brush.jpg" class="rounded" alt="variant products" />
+            </div>
+            <div class="cont mt-30 flex">
+              <div>
+                <h6>
+                  <a href="">Nylon Brush</a><br />
+                  <a class="mt-15 fz-24" style="color: white">Rp -
+                  </a>
+                </h6>
+                <a class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product col-lg-4">
+          <div class="post-box bg-dark">
+            <div class="img">
+              <img src="assets/img/products/Paket-Usaha-A.jpg" class="rounded" alt="variant products" />
+            </div>
+            <div class="cont mt-30 flex">
+              <div>
+                <h6>
+                  <a href=" https://shopee.co.id/Paket-Usaha-Laundry-Sepatu-Shoeslab-Lengkap-Full-Treatment-Paket-A-i.373562519.18082889170?sp_atk=ed244e27-5e0e-4216-b407-d87ea8c20045&xptdk=ed244e27-5e0e-4216-b407-d87ea8c20045">Paket Usaha A</a><br />
+                  <a class="mt-15 fz-24" style="color: white">Rp 390.000
+                  </a>
+                </h6>
+                <a class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product col-lg-4">
+          <div class="post-box bg-dark">
+            <div class="img">
+              <img src="assets/img/products/Paket-Usaha-B.jpg" class="rounded" alt="variant products" />
+            </div>
+            <div class="cont mt-30 flex">
+              <div>
+                <h6>
+                  <a href="https://shopee.co.id/Paket-Usaha-Laundry-Sepatu-Shoeslab-Lengkap-Full-Treatment-Paket-B-i.373562519.23576570318">Paket Usaha B</a><br />
+                  <a class="mt-15 fz-24" style="color: white">Rp 770.000
+                  </a>
+                </h6>
+                <a class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product col-lg-4">
+          <div class="post-box bg-dark">
+            <div class="img">
+              <img src="assets/img/products/Paket-Usaha-C.jpg" class="rounded" alt="variant products" />
+            </div>
+            <div class="cont mt-30 flex">
+              <div>
+                <h6>
+                  <a href=" https://shopee.co.id/Paket-Usaha-Laundry-Sepatu-Shoeslab-Lengkap-Full-Treatment-Paket-C-i.373562519.19582873992">Paket Usaha C</a><br />
+                  <a class="mt-15 fz-24" style="color: white">Rp 975.000
+                  </a>
+                </h6>
+                <a class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product col-lg-4">
+          <div class="post-box bg-dark">
+            <div class="img">
+              <img src="assets/img/products/Paket-Usaha-D.jpg" class="rounded" alt="variant products" />
+            </div>
+            <div class="cont mt-30 flex">
+              <div>
+                <h6>
+                  <a href="">Paket Usaha D</a><br />
+                  <a class="mt-15 fz-24" style="color: white">Rp 1.280.000
+                  </a>
+                </h6>
+                <a class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+        
         <button
               type="button"
               class="butn butn-lg butn-bg radius-30 loadMore"
@@ -227,7 +430,8 @@ include 'include/navigation.php';
       </div>
     </div>
   </section>
-  <!-- ==================== End Portfolio ==================== -->
+
+  <!-- ==================== End Products ==================== -->
 </main>
 
 
