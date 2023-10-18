@@ -42,7 +42,8 @@ include 'include/navigation.php';
 
   <!-- ==================== End Slider ==================== -->
 
-  <!-- ==================== Start Portfolio ==================== -->
+  <!-- ==================== Start Products ==================== -->
+
   <section class="mblog section-padding">
     <div class="container-xxl">
       <div class="sec-head mb-80">
@@ -69,7 +70,8 @@ include 'include/navigation.php';
       </div>
     </div>
   </section>
-  <!-- ==================== End Portfolio ==================== -->
+
+  <!-- ==================== End Products ==================== -->
 </main>
 
 

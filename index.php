@@ -224,31 +224,31 @@ include 'include/navigation.php';
                     <div class="row" style="margin-top: 140px;">
                         <h4 class="wow fw-700 mb-15 animated" style="visibility: visible;">Lainnya di Channel Kami</h4>
                         <div class="col-lg-3 col-md-6 wow fadeInUp" data-overlay-dark="2">
-                            <a class="bg-img valign pt-100 pb-100 mb-20" data-background="assets/img/team/t4.jpg">
+                        <a href="https://www.youtube.com/watch?v=kgfJvIIMoZk&ab_channel=Shoeslab" target="_blank" class="bg-img valign pt-100 pb-100 mb-20" data-background="assets/img/team/galih.jpg">
                                 <img src="assets/img/play-button.png" style="width:75px;height:75px;margin: 0 auto;opacity: 0.5;">
                             </a>
-                            <a href="https://www.youtube.com/@shoeslab" class="play-red">
+                            <div class="play-red"></div>
                             </a>
                         </div>
 
                         <div class="col-lg-3 col-md-6 wow fadeInUp" data-overlay-dark="2">
-                            <a class="bg-img valign pt-100 pb-100 mb-20" data-background="assets/img/team/t3.jpg">
+                        <a href="https://www.youtube.com/watch?v=Lvc0Oc6jqYw&ab_channel=Shoeslab" target="_blank" class="bg-img valign pt-100 pb-100 mb-20" data-background="assets/img/team/mukti.jpg">
                                 <img src="assets/img/play-button.png" style="width:75px;height:75px;margin: 0 auto; opacity: 0.5;">
                             </a>
-                            <a href="https://www.youtube.com/@shoeslab" class="play-red">
+                            <div class="play-red"></div>
                             </a>
                         </div>
 
                         <div class="col-lg-3 col-md-6 wow fadeInUp" data-overlay-dark="2">
-                            <a class="bg-img valign pt-100 pb-100 mb-20" data-background="assets/img/team/t1.jpg">
+                        <a href="https://www.youtube.com/watch?v=NvbnDd5vVtE&ab_channel=Shoeslab" target="_blank" class="bg-img valign pt-100 pb-100 mb-20" data-background="assets/img/team/eone.jpg">
                                 <img src="assets/img/play-button.png" style="width:75px;height:75px;margin: 0 auto;opacity: 0.5;"></a>
-                            <a href="https://www.youtube.com/@shoeslab" class="play-red"> </a>
+                                <div class="play-red"></div>
                         </div>
 
                         <div class="col-lg-3 col-md-6 wow fadeInUp" data-overlay-dark="2">
-                            <a class="bg-img valign pt-100 pb-100 mb-20" data-background="assets/img/team/t2.jpg">
+                        <a href="https://www.youtube.com/watch?v=nIvp7JDr8Mk&t=38s&ab_channel=Shoeslab" target="_blank" class="bg-img valign pt-100 pb-100 mb-20" data-background="assets/img/team/keren.jpg">
                                 <img src="assets/img/play-button.png" style="width:75px;height:75px;margin: 0 auto;opacity: 0.5;"></a>
-                            <a href="https://www.youtube.com/@shoeslab" class="play-red"> </a>
+                                <div class="play-red"></div>
                         </div>
                     </div>
 
