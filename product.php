@@ -56,174 +56,16 @@ include 'include/navigation.php';
       </div>
 
       <div class="row">
-        
-        <div class="product col-lg-4">
-          <div class="post-box bg-dark">
-            <div class="img">
-              <img src="assets/img/products/p1.jpg" class="rounded" alt="variant products" />
-            </div>
-            <div class="cont mt-30 flex">
-              <div>
-                <h6>
-                  <a href="https://www.tokopedia.com/shoeslab-1?source=universe&st=product">Shoe Deodorizer 100ml</a><br />
-                  <a href="" class="mt-15 fz-24" style="color: white">Rp 40.000
-                  </a>
-                </h6>
-                <a href="# " class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="row" id="productsContainer">
 
-        <div class="product col-lg-4">
-          <div class="post-box bg-dark">
-            <div class="img">
-              <img src="assets/img/products/p2.jpg" class="rounded" alt="variant products" />
-            </div>
-            <div class="cont mt-30 flex">
-              <div>
-                <h6>
-                  <a href="https://www.tokopedia.com/shoeslab-1?source=universe&st=product">Shoe Cleaner 100ml</a><br />
-                  <a href="" class="mt-15 fz-24" style="color: white">Rp 40.000
-                  </a>
-                </h6>
-                <a href="# " class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
-              </div>
-            </div>
-          </div>
         </div>
-
-        <div class="product col-lg-4">
-          <div class="post-box bg-dark">
-            <div class="img">
-              <img src="assets/img/products/p3.jpg" class="rounded" alt="variant products" />
-            </div>
-            <div class="cont mt-30 flex">
-              <div>
-                <h6>
-                  <a href="https://www.tokopedia.com/shoeslab-1?source=universe&st=product">Dirt Remover</a><br />
-                  <a href="" class="mt-15 fz-24" style="color: white">Rp 30.000
-                  </a>
-                </h6>
-                <a href="# " class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="product col-lg-4">
-          <div class="post-box bg-dark">
-            <div class="img">
-              <img src="assets/img/products/p4.jpg" class="rounded" alt="variant products" />
-            </div>
-            <div class="cont mt-30 flex">
-              <div>
-                <h6>
-                  <a href="https://www.tokopedia.com/shoeslab-1?source=universe&st=product">Detailing Brush</a><br />
-                  <a href="" class="mt-15 fz-24" style="color: white">Rp 50.000
-                  </a>
-                </h6>
-                <a href="# " class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="product col-lg-4">
-          <div class="post-box bg-dark">
-            <div class="img">
-              <img src="assets/img/products/p5.jpg" class="rounded" alt="variant products" />
-            </div>
-            <div class="cont mt-30 flex">
-              <div>
-                <h6>
-                  <a href="https://www.tokopedia.com/shoeslab-1?source=universe&st=product">Unyellowing</a><br />
-                  <a href="" class="mt-15 fz-24" style="color: white">Rp 40.000
-                  </a>
-                </h6>
-                <a href="# " class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="product col-lg-4">
-          <div class="post-box bg-dark">
-            <div class="img">
-              <img src="assets/img/products/p6.jpg" class="rounded" alt="variant products" />
-            </div>
-            <div class="cont mt-30 flex">
-              <div>
-                <h6>
-                  <a href="https://www.tokopedia.com/shoeslab-1?source=universe&st=product">Waterbased Paint</a><br />
-                  <a href="" class="mt-15 fz-24" style="color: white">Rp 40.000
-                  </a>
-                </h6>
-                <a href="# " class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="product col-lg-4">
-          <div class="post-box bg-dark">
-            <div class="img">
-              <img src="assets/img/products/p7.jpg" class="rounded" alt="variant products" />
-            </div>
-            <div class="cont mt-30 flex">
-              <div>
-                <h6>
-                  <a href="https://www.tokopedia.com/shoeslab-1?source=universe&st=product">Basic Shoe Care</a><br />
-                  <a href="" class="mt-15 fz-24" style="color: white">Rp 30.000
-                  </a>
-                </h6>
-                <a href="# " class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="product col-lg-4">
-          <div class="post-box bg-dark">
-            <div class="img">
-              <img src="assets/img/products/p8.jpg" class="rounded" alt="variant products" />
-            </div>
-            <div class="cont mt-30 flex">
-              <div>
-                <h6>
-                  <a href="https://www.tokopedia.com/shoeslab-1?source=universe&st=product">Shoe Cleaner 1Ltr</a><br />
-                  <a href="" class="mt-15 fz-24" style="color: white">Rp 50.000
-                  </a>
-                </h6>
-                <a href="# " class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="product col-lg-4">
-          <div class="post-box bg-dark">
-            <div class="img">
-              <img src="assets/img/products/p9.jpg" class="rounded" alt="variant products" />
-            </div>
-            <div class="cont mt-30 flex">
-              <div>
-                <h6>
-                  <a href="https://www.tokopedia.com/shoeslab-1?source=universe&st=product">Shoe Cleaner</a><br />
-                  <a href="" class="mt-15 fz-24" style="color: white">Rp 40.000
-                  </a>
-                </h6>
-                <a href="# " class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
+  
         <button
-              type="button"
-              class="butn butn-lg butn-bg radius-30 loadMore"
-              style="width: auto; margin: 0 auto">
-              Load More
-            </button>
+          type="button"
+          class="butn butn-lg butn-bg radius-30 loadMore"
+          style="width: auto; margin: 0 auto">
+          Load More
+        </button>
       </div>
     </div>
   </section>
@@ -241,33 +83,76 @@ include 'include/footer.php';
       // Inisialisasi variabel global
       let currentIndex = 0
       const loadAmount = 3
-      const products = document.getElementsByClassName("product")
+      const products = document.getElementsByClassName("productContainer")
       const loadMoreButton = document.querySelector(".loadMore")
 
       // Sembunyikan semua elemen product
-      Array.from(products).forEach((product) => {
-        product.style.display = "none"
-      })
+      // Array.from(products).forEach((product) => {
+      //   product.style.display = "none"
+      // })
 
-      // Tampilkan elemen product sesuai dengan indeks yang ditentukan
-      function showProducts(startIndex, endIndex) {
-        for (let i = startIndex; i < endIndex; i++) {
-          if (products[i]) {
-            products[i].style.display = "block"
+      const base_url = 'http://localhost:3000'
+
+      async function fetchProducts(startIndex, endIndex) {
+        try {
+          const limit = endIndex - startIndex;
+          const response = await fetch(`${base_url}/v1/product?limit=${limit}&page=${startIndex}`);
+          if (!response.ok) {
+            throw new Error("Gagal mengambil produk");
           }
+          const data = await response.json();
+          return data;
+        } catch (error) {
+          console.error(error);
+          return [];
         }
       }
 
-      // Fungsi untuk menangani klik pada tombol "Load More"
-      function handleLoadMore() {
-        const nextIndex = currentIndex + loadAmount
-        showProducts(currentIndex, nextIndex)
+      // Tampilkan elemen product sesuai dengan indeks yang ditentukan
+      function showProducts(products) {
+        const rupiah = (number)=>{
+          return new Intl.NumberFormat("id-ID", {
+            style: "currency",
+            currency: "IDR",
+            minimumFractionDigits: 0
+          }).format(number);
+        }
+        products.data.forEach((product) => {
+          const productElement = document.createElement("div");
+          productElement.className = "product col-lg-4";
+          productElement.innerHTML = `
+            <div class="post-box bg-dark" style="height: 400px;">
+              <div class="img">
+                <img src="${base_url + product.productImage}" class="rounded" alt="variant products" style="max-width: 100%; height: 200px; max-height: 200px;" />
+              </div>
+              <div class="cont mt-30 flex">
+                <div>
+                  <h6>
+                    <a href="">${product?.productName}</a><br />
+                    <a href="" class="mt-15 fz-24" style="color: white">${rupiah(product.productPrice)}</a>
+                  </h6>
+                  <a href="${product.productLink}" target="_blank" class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
+                </div>
+              </div>
+            </div>
+          `;
 
-        if (nextIndex >= products.length) {
-          loadMoreButton.style.display = "none"
+          productsContainer.appendChild(productElement);
+        });
+      }
+
+
+      // Fungsi untuk menangani klik pada tombol "Load More"
+      async function handleLoadMore() {
+        const nextIndex = currentIndex + loadAmount;
+        const products = await fetchProducts(currentIndex, nextIndex);
+        showProducts(products);
+
+        if (products.data.length < loadAmount) {
+          loadMoreButton.style.display = "none";
         }
 
-        currentIndex = nextIndex
+        currentIndex = nextIndex;
       }
 
       // Tampilkan 3 elemen pertama saat halaman dimuat
@@ -277,15 +162,4 @@ include 'include/footer.php';
 
       // Tambahkan event listener ke tombol "Load More"
       loadMoreButton.addEventListener("click", handleLoadMore)
-      // $(".product").slice(0, 6).show(); //showing 3 div
-
-      // $(".loadMore").on("click",function(){
-      //     $(".product:hidden").slice(0, 3).show(); //showing 3 hidden div on click
-
-      //     if($(".product:hidden").length == 0)
-      //     {
-      //         $(".loadMore").fadeOut(); //this will hide
-      //         //button when length is 0
-      //     }
-      // })
     </script>

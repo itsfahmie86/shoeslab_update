@@ -133,6 +133,7 @@
 
  <!-- custom scripts -->
  <script src="assets/js/scripts.js "></script>
+ <script src="assets/js/moment.js "></script>
 
  </body>
 

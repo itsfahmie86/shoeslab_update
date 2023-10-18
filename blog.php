@@ -58,120 +58,13 @@ include 'include/header.php';
                 <div class="main-posts grids">
 
                     <div class="row">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="post-clas mb-80">
-                                <div class="img">
-                                    <img src="assets/img/blog/b/b1.jpg" alt="">
-                                </div>
-                                <div class="cont mt-40">
-                                    <div class="date main-color fz-12 fw-500 text-u ls1 mb-15">
-                                        <a href="blog-post.html">Design / 30 august 2021</a>
-                                    </div>
-                                    <h6 class="fz-20 fw-700">
-                                        <a href="blog-post.html">Creative advertising in our life became a
-                                            info
-                                            noise</a>
-                                    </h6>
-                                    <a href="blog-post.html" class="mt-20 fz-13 fw-500 text-u ls1 opacity-7">Read
-                                        More <i class="pe-7s-angle-right ml-5"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="post-clas mb-80">
-                                <div class="img">
-                                    <img src="assets/img/blog/b/b10.jpg" alt="">
-                                </div>
-                                <div class="cont mt-40">
-                                    <div class="date main-color fz-12 fw-500 text-u ls1 mb-15">
-                                        <a href="blog-post.html">Design / 30 august 2021</a>
-                                    </div>
-                                    <h6 class="fz-20 fw-700">
-                                        <a href="blog-post.html">Creative advertising in our life became a
-                                            info
-                                            noise</a>
-                                    </h6>
-                                    <a href="blog-post.html" class="mt-20 fz-13 fw-500 text-u ls1 opacity-7">Read
-                                        More <i class="pe-7s-angle-right ml-5"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="post-clas mb-80">
-                                <div class="img">
-                                    <img src="assets/img/blog/b/b14.jpg" alt="">
-                                </div>
-                                <div class="cont mt-40">
-                                    <div class="date main-color fz-12 fw-500 text-u ls1 mb-15">
-                                        <a href="blog-post.html">Design / 30 august 2021</a>
-                                    </div>
-                                    <h6 class="fz-20 fw-700">
-                                        <a href="blog-post.html">Creative advertising in our life became a
-                                            info
-                                            noise</a>
-                                    </h6>
-                                    <a href="blog-post.html" class="mt-20 fz-13 fw-500 text-u ls1 opacity-7">Read
-                                        More <i class="pe-7s-angle-right ml-5"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="post-clas mb-80">
-                                <div class="img">
-                                    <img src="assets/img/blog/b/b8.jpg" alt="">
-                                </div>
-                                <div class="cont mt-40">
-                                    <div class="date main-color fz-12 fw-500 text-u ls1 mb-15">
-                                        <a href="blog-post.html">Design / 30 august 2021</a>
-                                    </div>
-                                    <h6 class="fz-20 fw-700">
-                                        <a href="blog-post.html">Creative advertising in our life became a
-                                            info
-                                            noise</a>
-                                    </h6>
-                                    <a href="blog-post.html" class="mt-20 fz-13 fw-500 text-u ls1 opacity-7">Read
-                                        More <i class="pe-7s-angle-right ml-5"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="post-clas mb-80">
-                                <div class="img">
-                                    <img src="assets/img/blog/b/b4.jpg" alt="">
-                                </div>
-                                <div class="cont mt-40">
-                                    <div class="date main-color fz-12 fw-500 text-u ls1 mb-15">
-                                        <a href="blog-post.html">Design / 30 august 2021</a>
-                                    </div>
-                                    <h6 class="fz-20 fw-700">
-                                        <a href="blog-post.html">Creative advertising in our life became a
-                                            info
-                                            noise</a>
-                                    </h6>
-                                    <a href="blog-post.html" class="mt-20 fz-13 fw-500 text-u ls1 opacity-7">Read
-                                        More <i class="pe-7s-angle-right ml-5"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="post-clas mb-80">
-                                <div class="img">
-                                    <img src="assets/img/blog/b/b5.jpg" alt="">
-                                </div>
-                                <div class="cont mt-40">
-                                    <div class="date main-color fz-12 fw-500 text-u ls1 mb-15">
-                                        <a href="blog-post.html">Design / 30 august 2021</a>
-                                    </div>
-                                    <h6 class="fz-20 fw-700">
-                                        <a href="blog-post.html">Creative advertising in our life became a
-                                            info
-                                            noise</a>
-                                    </h6>
-                                    <a href="blog-post.html" class="mt-20 fz-13 fw-500 text-u ls1 opacity-7">Read
-                                        More <i class="pe-7s-angle-right ml-5"></i></a>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="row" id="blogsContainer"></div>
+                        <button
+                            type="button"
+                            class="butn butn-lg butn-bg radius-30 loadMore"
+                            style="width: auto; margin: 0 auto">
+                            Load More
+                        </button>
                     </div>
 
                 </div>
@@ -187,3 +80,81 @@ include 'include/header.php';
 <?php
     include 'include/footer.php';
 ?>
+
+<script>
+    let currentIndex = 0
+    const loadAmount = 3
+    const blogs = document.getElementsByClassName("blogsContainer")
+    const loadMoreButton = document.querySelector(".loadMore")
+
+    const base_url = 'http://localhost:3000'
+
+    async function fetchBlog(startIndex, endIndex) {
+        try {
+            const limit = endIndex - startIndex;
+            const response = await fetch(`${base_url}/v1/blog?pageSize=${limit}&page=${startIndex}`);
+            if (!response.ok) {
+            throw new Error("Gagal mengambil produk");
+            }
+            const data = await response.json();
+            return data;
+        } catch (error) {
+            console.error(error);
+            return [];
+        }
+    }
+
+    const momentJs = (value) => {
+        return moment(value).locale('id').format('LL')
+    }
+
+    function showBlogs(blogs) {
+        blogs.data.forEach((blog) => {
+        const blogElement = document.createElement("div");
+        blogElement.className = "col-lg-4 col-md-6";
+        blogElement.innerHTML = `
+            <div class="post-clas mb-80">
+                <div class="img">
+                    <img src="${base_url + blog.blogImage}" alt="">
+                </div>
+                <div class="cont mt-40">
+                    <div class="date main-color fz-12 fw-500 text-u ls1 mb-15">
+                        <a href="blog-post.html">${momentJs(blog.createdAt)}</a>
+                    </div>
+                    <h6 class="fz-20 fw-700">
+                        <a href="blog-post.html">${blog.blogTitle}</a>
+                    </h6>
+                    <a href="blog-post.html" 
+                       class="mt-20 fz-13 fw-500 text-u ls1 opacity-7">
+                       Read More 
+                       <i class="pe-7s-angle-right ml-5"></i>
+                    </a>
+                </div>
+            </div>
+        `;
+
+        blogsContainer.appendChild(blogElement);
+        });
+    }
+
+    // Fungsi untuk menangani klik pada tombol "Load More"
+    async function handleLoadMore() {
+    const nextIndex = currentIndex + loadAmount;
+    const blogs = await fetchBlog(currentIndex, nextIndex);
+    showBlogs(blogs);
+    if (blogs.data.length < loadAmount) {
+        loadMoreButton.style.display = "none";
+    }
+
+    currentIndex = nextIndex;
+    }
+
+    // Tampilkan 3 elemen pertama saat halaman dimuat
+    document.addEventListener("DOMContentLoaded", () => {
+    handleLoadMore()
+    })
+
+    // Tambahkan event listener ke tombol "Load More"
+    loadMoreButton.addEventListener("click", handleLoadMore)
+    
+</script>
