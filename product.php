@@ -93,7 +93,7 @@ include 'include/footer.php';
       //   product.style.display = "none"
       // })
 
-      const base_url = 'http://localhost:3000'
+      const base_url = 'https://shoeslab.id'
 
       async function fetchProducts(startIndex, endIndex) {
         try {

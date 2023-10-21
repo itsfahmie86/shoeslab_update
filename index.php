@@ -256,6 +256,203 @@ include 'include/navigation.php';
             </div>
     </section>
 
+    <!-- ==================== Start Swipper ==================== -->
+
+    <!-- Slider main container -->
+    <section class="testim-simple section-padding position-re o-hidden">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-lg-6">
+              <div class="cont md-mb50">
+                  <h1 class="wow fw-700 mb-15 animated" style="visibility: visible;">Hasil Dari Jasa Kami</h1>
+                  <p class="wow fadeInUp" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">Ayo, jangan lewatkan konten seru dan bermanfaat di channel YouTube kami! Langganan sekarang untuk mendapatkan update terbaru tentang video-video menarik, tutorial yang informatif, dan hiburan yang menghibur. Klik tombol subscribe dan ikuti perjalanan kami di YouTube!</p>
+              </div>
+          </div>
+        </div>
+        <div class="container wow fadeInUp">
+          <div class="swiper tranding-slider">
+            <div class="swiper-wrapper">
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="assets/img/gallery/3.jpg" alt="Tranding">
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="assets/img/gallery/3.jpg" alt="Tranding">
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <!-- <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="images/tranding-food-2.png" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <h1 class="food-price">$20</h1>
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      Meat Ball
+                    </h2>
+                    <h3 class="food-rating">
+                      <span>4.5</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div> -->
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <!-- <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="images/tranding-food-3.png" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <h1 class="food-price">$40</h1>
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      Burger
+                    </h2>
+                    <h3 class="food-rating">
+                      <span>4.5</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div> -->
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <!-- <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="images/tranding-food-4.png" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <h1 class="food-price">$15</h1>
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      Frish Curry
+                    </h2>
+                    <h3 class="food-rating">
+                      <span>4.5</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div> -->
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <!-- <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="images/tranding-food-5.png" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <h1 class="food-price">$15</h1>
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      Pane Cake
+                    </h2>
+                    <h3 class="food-rating">
+                      <span>4.5</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div> -->
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <!-- <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="images/tranding-food-6.png" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <h1 class="food-price">$20</h1>
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      Vanilla cake
+                    </h2>
+                    <h3 class="food-rating">
+                      <span>4.5</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div> -->
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <!-- <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="images/tranding-food-7.png" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                  <h1 class="food-price">$8</h1>
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">
+                      Straw Cake
+                    </h2>
+                    <h3 class="food-rating">
+                      <span>4.5</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div> -->
+              <!-- Slide-end -->
+            </div>
+  
+            <!-- <div class="tranding-slider-control">
+              <div class="swiper-button-prev slider-arrow">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+              </div>
+              <div class="swiper-button-next slider-arrow">
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div> -->
+  
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==================== End Swipper ==================== -->
 
 
 

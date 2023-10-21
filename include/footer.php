@@ -134,6 +134,8 @@
  <!-- custom scripts -->
  <script src="assets/js/scripts.js "></script>
  <script src="assets/js/moment.js "></script>
+ <script src="assets/js/swipper.js "></script>
+ <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
  </body>
 

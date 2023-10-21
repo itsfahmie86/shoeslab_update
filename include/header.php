@@ -27,7 +27,12 @@
 
     <!-- Plugins -->
     <link rel="stylesheet" href="assets/css/plugins.css" />
-    <link rel="stylesheet" href="assets/css/plugins/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.css" />    
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
 
 
     <!--OWL-->
@@ -41,6 +46,7 @@
 
     <!-- Core Style Css -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/swipper.css" />
 
 </head>
 
