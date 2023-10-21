@@ -101,25 +101,25 @@ html {
 }
 
 .tranding-slide {
-  width: 37rem;
-  height: 42rem;
+  width: 38rem;
+  height: 35rem;
   position: relative;
 }
 
 @media (max-width:500px) {
   .tranding-slide {
-    width: 28rem !important;
+    width: 32rem !important;
     height: 36rem !important;
   }
   .tranding-slide .tranding-slide-img img {
-    width: 28rem !important;
-    height: 36rem !important;
+    width: 32rem !important;
+    height: 34rem !important;
   }
 }
 
 .tranding-slide .tranding-slide-img img {
-  width: 37rem;
-  height: 42rem;
+  width: 28rem;
+  height: 32rem;
   border-radius: 2rem;
   object-fit: cover;
 }
