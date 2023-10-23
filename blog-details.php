@@ -8,7 +8,7 @@ include 'include/navigation.php';
         <!-- ==================== Start Slider ==================== -->
 
         <header class="pg-header tpost bg-img parallaxie valign" data-background=""
-            data-overlay-dark="3">
+            data-overlay-dark="3" data-src="" >
             <div class="container ontop">
                 <div class="row">
                     <div class="col-12">
@@ -102,14 +102,17 @@ include 'include/navigation.php';
 
             <div class="recent-posts blog-overlay sub-bg section-padding mt-100">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-12">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-11">
                             <div class="mb-60">
                                 <h4>Recent Posts</h4>
                             </div>
                         </div>
                     </div>
-                    <div class="row" id="recentBlog">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-11" >
+                            <div class="row" id="recentBlog"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -170,8 +173,21 @@ include 'include/navigation.php';
         }
     }
     
+    document.addEventListener("DOMContentLoaded", function() {
+        const header = document.querySelector(".pg-header");
 
-    // Fungsi untuk mengambil data dari API
+        const observer = new IntersectionObserver(entries => {
+            if (entries[0].isIntersecting) {
+            const backgroundUrl = header.getAttribute("data-src");
+            header.style.backgroundImage = `url(${apiUrl}${blogDetail.blogImage})`;
+
+            observer.unobserve(header);
+            }
+        });
+
+        observer.observe(header);
+    });
+
     async function getDataFromAPI() {
         const recentBlog = document.getElementById('recentBlog');
 
