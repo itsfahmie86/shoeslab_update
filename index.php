@@ -179,7 +179,7 @@ include 'include/navigation.php';
 
     <!-- ==================== Start Video ==================== -->
 
-    <section class="testim-simple section-padding position-re o-hidden">
+    <section class="testim-simple section-padding position-re o-hidden" style="padding: 70px 0 !important;">
         <div class="container-xxl">
             <div class="sec-head mb-80">
 
@@ -221,34 +221,34 @@ include 'include/navigation.php';
                     </div>
 
                     <br><br>
-                    <div class="row" style="margin-top: 140px;">
+                    <div class="row" style="margin-top: 120px;">
                         <h4 class="wow fw-700 mb-15 animated" style="visibility: visible;">Lainnya di Channel Kami</h4>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-overlay-dark="2">
-                        <a href="https://www.youtube.com/watch?v=kgfJvIIMoZk&ab_channel=Shoeslab" target="_blank" class="bg-img valign pt-100 pb-100 mb-20" data-background="assets/img/team/galih.jpg">
+                        <div class="col-lg-6 col-md-6 wow fadeInUp" data-overlay-dark="2">
+                        <a href="https://www.youtube.com/watch?v=kgfJvIIMoZk&ab_channel=Shoeslab" target="_blank" class="pt-100 pb-100 mb-20" style="display: flex; align-items: center; justify-content: center; width: -webkit-fill-available; background-size: cover; background-repeat: no-repeat; background-image: url(https://img.youtube.com/vi/kgfJvIIMoZk/maxresdefault.jpg)" data-background="">
                                 <img src="assets/img/play-button.png" style="width:75px;height:75px;margin: 0 auto;opacity: 0.5;">
                             </a>
-                            <div class="play-red"></div>
+                            <!-- <div class="play-red"></div> -->
                             </a>
                         </div>
 
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-overlay-dark="2">
-                        <a href="https://www.youtube.com/watch?v=Lvc0Oc6jqYw&ab_channel=Shoeslab" target="_blank" class="bg-img valign pt-100 pb-100 mb-20" data-background="assets/img/team/mukti.jpg">
+                        <div class="col-lg-6 col-md-6 wow fadeInUp" data-overlay-dark="2">
+                        <a href="https://www.youtube.com/watch?v=Lvc0Oc6jqYw&ab_channel=Shoeslab" target="_blank" class="pt-100 pb-100 mb-20" style="display: flex; align-items: center; justify-content: center; width: -webkit-fill-available; background-size: cover; background-repeat: no-repeat; background-image: url(https://img.youtube.com/vi/Lvc0Oc6jqYw/maxresdefault.jpg)" data-background="">
                                 <img src="assets/img/play-button.png" style="width:75px;height:75px;margin: 0 auto; opacity: 0.5;">
                             </a>
-                            <div class="play-red"></div>
+                            <!-- <div class="play-red"></div> -->
                             </a>
                         </div>
 
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-overlay-dark="2">
-                        <a href="https://www.youtube.com/watch?v=NvbnDd5vVtE&ab_channel=Shoeslab" target="_blank" class="bg-img valign pt-100 pb-100 mb-20" data-background="assets/img/team/eone.jpg">
+                        <div class="col-lg-6 col-md-6 wow fadeInUp" data-overlay-dark="2">
+                        <a href="https://www.youtube.com/watch?v=NvbnDd5vVtE&ab_channel=Shoeslab" target="_blank" class="pt-100 pb-100 mb-20" style="display: flex; align-items: center; justify-content: center; width: -webkit-fill-available; background-size: cover; background-repeat: no-repeat; background-image: url(https://img.youtube.com/vi/NvbnDd5vVtE/maxresdefault.jpg)" data-background="">
                                 <img src="assets/img/play-button.png" style="width:75px;height:75px;margin: 0 auto;opacity: 0.5;"></a>
-                                <div class="play-red"></div>
+                                <!-- <div class="play-red"></div> -->
                         </div>
 
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-overlay-dark="2">
+                        <div class="col-lg-6 col-md-6 wow fadeInUp" data-overlay-dark="2">
                         <a href="https://www.youtube.com/watch?v=nIvp7JDr8Mk&t=38s&ab_channel=Shoeslab" target="_blank" class="bg-img valign pt-100 pb-100 mb-20" data-background="assets/img/team/keren.jpg">
                                 <img src="assets/img/play-button.png" style="width:75px;height:75px;margin: 0 auto;opacity: 0.5;"></a>
-                                <div class="play-red"></div>
+                                <!-- <div class="play-red"></div> -->
                         </div>
                     </div>
 
@@ -256,6 +256,62 @@ include 'include/navigation.php';
             </div>
     </section>
 
+    <!-- ==================== Start Swipper ==================== -->
+
+    <!-- Slider main container -->
+    <section class="testim-simple position-re o-hidden">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-lg-12">
+              <div class="cont md-mb50">
+                  <h1 class="wow fw-700 mb-15 animated" style="visibility: visible;">Hasil Kerja Kami</h1>
+                  <p class="wow fadeInUp" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    Tim kami terdiri dari ahli dalam bidang perawatan sepatu dan kami berkomitmen untuk memberikan pelayanan terbaik untuk menjaga keindahan dan kualitas sepatu Anda. Dengan menggunakan teknik-teknik perawatan yang terbaik dan bahan-bahan yang berkualitas tinggi, kami akan memastikan sepatu Anda diperlakukan dengan penuh kehati-hatian dan dipulihkan ke kondisi yang optimal.
+                  </p>
+              </div>
+          </div>
+        </div>
+        <div class="container wow fadeInUp" style="margin-top: 100px">
+          <div class="swiper tranding-slider">
+            <div class="swiper-wrapper">
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="assets/img/PictBeforeAfter/DeepWeb.png" alt="Tranding">
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="assets/img/PictBeforeAfter/BeforeAfterRepaintWeb.png" alt="Tranding">
+                </div>
+              </div>
+              
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="assets/img/PictBeforeAfter/Unyellowing-Web.png" alt="Tranding">
+                </div>
+              </div>
+              <!-- Slide-end -->
+            </div>
+  
+            <!-- <div class="tranding-slider-control">
+              <div class="swiper-button-prev slider-arrow">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+              </div>
+              <div class="swiper-button-next slider-arrow">
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div> -->
+  
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==================== End Swipper ==================== -->
 
 
 

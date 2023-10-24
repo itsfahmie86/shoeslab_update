@@ -88,7 +88,7 @@ include 'include/navigation.php';
     const blogs = document.getElementsByClassName("blogsContainer")
     const loadMoreButton = document.querySelector(".loadMore")
 
-    const base_url = 'http://localhost:3000'
+    const base_url = 'https://shoeslab.id'
 
     async function fetchBlog(startIndex, endIndex) {
         try {
@@ -123,9 +123,9 @@ include 'include/navigation.php';
                         <a href="blog-post.html">${momentJs(blog.createdAt)}</a>
                     </div>
                     <h6 class="fz-20 fw-700">
-                        <a href="blog-post.html">${blog.blogTitle}</a>
+                        <a href="blog-details.php?id=${blog.id}">${blog.blogTitle}</a>
                     </h6>
-                    <a href="blog-post.html" 
+                    <a href="blog-details.php?id=${blog.id}" 
                        class="mt-20 fz-13 fw-500 text-u ls1 opacity-7">
                        Read More 
                        <i class="pe-7s-angle-right ml-5"></i>

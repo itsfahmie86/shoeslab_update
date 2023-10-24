@@ -93,7 +93,7 @@ include 'include/footer.php';
       //   product.style.display = "none"
       // })
 
-      const base_url = 'http://localhost:3000'
+      const base_url = 'https://shoeslab.id'
 
       async function fetchProducts(startIndex, endIndex) {
         try {
@@ -123,9 +123,9 @@ include 'include/footer.php';
           const productElement = document.createElement("div");
           productElement.className = "product col-lg-4";
           productElement.innerHTML = `
-            <div class="post-box bg-dark" style="height: 400px;">
+            <div class="post-box bg-dark" style="height: 500px;">
               <div class="img">
-                <img src="${base_url + product.productImage}" class="rounded" alt="variant products" style="max-width: 100%; height: 200px; max-height: 200px;" />
+                <img src="${base_url + product.productImage}" class="rounded" alt="variant products" style="max-height: 500px;" />
               </div>
               <div class="cont mt-30 flex">
                 <div>
