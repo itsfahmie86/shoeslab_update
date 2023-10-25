@@ -22,7 +22,7 @@
 
 
     <main>
-        <header class="pg-header style2 bg-img parallaxie valign" data-background="assets/img/slider/g1.jpg"
+        <header class="pg-header style2 bg-img parallaxie valign" data-background="assets/img/slider/1.jpg"
             data-overlay-dark="6">
             <div class="container-xxl ontop">
                 <div class="row">
@@ -72,7 +72,7 @@
 
                 <div class="gallery sam-height" style="position: relative; height: 1380px;">
 
-                    <div class="row">
+                    <div class="row  mb-40" id="imageShow">
 
                         <div class="col-lg-4 col-md-6 items info-shadow mb-40"
                             style="position: absolute; left: 0px; top: 0px;">
@@ -110,96 +110,6 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-md-6 items info-shadow mb-40"
-                            style="position: absolute; left: 0px; top: 460px;">
-                            <div class="item-img">
-                                <a href="https://www.instagram.com/_shoeslab/?hl=en" class="imago wow animated fadeInUp"
-                                    style="visibility: visible;">
-                                    <div class="inner wow animated fadeInUp" style="visibility: visible;">
-                                        <img src="assets/img/gallery/2.jpg" alt="image" class="radius-5">
-                                    </div>
-                                </a>
-                                <div class="info">
-                                    <h6><a href="https://www.instagram.com/_shoeslab/?hl=en">Repair</a></h6>
-                                    <span class="sub-title tag opacity-7 mb-0 mt-10"><a
-                                            href="https://www.instagram.com/_shoeslab/?hl=en">View On
-                                            Instagram</a></span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 items info-shadow mb-40"
-                            style="position: absolute; left: 459px; top: 460px;">
-                            <div class="item-img">
-                                <a href="https://www.instagram.com/_shoeslab/?hl=en" class="imago wow animated fadeInUp"
-                                    style="visibility: visible;">
-                                    <div class="inner wow animated fadeInUp" style="visibility: visible;">
-                                        <img src="assets/img/gallery/4.jpg" alt="image" class="radius-5">
-                                    </div>
-                                </a>
-                                <div class="info">
-                                    <h6><a href="https://www.instagram.com/_shoeslab/?hl=en">Repair</a></h6>
-                                    <span class="sub-title tag opacity-7 mb-0 mt-10"><a
-                                            href="https://www.instagram.com/_shoeslab/?hl=en">View On
-                                            Instagram</a></span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 items info-shadow mb-40"
-                            style="position: absolute; left: 918px; top: 460px;">
-                            <div class="item-img">
-                                <a href="https://www.instagram.com/_shoeslab/?hl=en" class="imago wow animated fadeInUp"
-                                    style="visibility: visible;">
-                                    <div class="inner wow animated fadeInUp" style="visibility: visible;">
-                                        <img src="assets/img/gallery/6.jpg" alt="image" class="radius-5">
-                                    </div>
-                                </a>
-                                <div class="info">
-                                    <h6><a href="https://www.instagram.com/_shoeslab/?hl=en">Repaint</a></h6>
-                                    <span class="sub-title tag opacity-7 mb-0 mt-10"><a
-                                            href="https://www.instagram.com/_shoeslab/?hl=en">View On
-                                            Instagram</a></span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-8 col-md-6 items info-shadow mb-40"
-                            style="position: absolute; left: 0px; top: 920px;">
-                            <div class="item-img">
-                                <a href="https://www.instagram.com/_shoeslab/?hl=en" class="imago wow animated fadeInUp"
-                                    style="visibility: visible;">
-                                    <div class="inner wow animated fadeInUp" style="visibility: visible;">
-                                        <img src="assets/img/gallery/5.jpg" alt="image" class="radius-5">
-                                    </div>
-                                </a>
-                                <div class="info">
-                                    <h6><a href="https://www.instagram.com/_shoeslab/?hl=en">Deep Cleaning</a></h6>
-                                    <span class="sub-title tag opacity-7 mb-0 mt-10"><a
-                                            href="https://www.instagram.com/_shoeslab/?hl=en">View On
-                                            Instagram</a></span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 items info-shadow mb-40"
-                            style="position: absolute; left: 918px; top: 920px;">
-                            <div class="item-img">
-                                <a href="https://www.instagram.com/_shoeslab/?hl=en" class="imago wow animated fadeInUp"
-                                    style="visibility: visible;">
-                                    <div class="inner wow animated fadeInUp" style="visibility: visible;">
-                                        <img src="assets/img/gallery/7.jpg" alt="image" class="radius-5">
-                                    </div>
-                                </a>
-                                <div class="info">
-                                    <h6><a href="https://www.instagram.com/_shoeslab/?hl=en">Deep Cleaning</a></h6>
-                                    <span class="sub-title tag opacity-7 mb-0 mt-10"><a
-                                            href="https://www.instagram.com/_shoeslab/?hl=en">View On
-                                            Instagram</a></span>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
 
                 </div>
@@ -211,7 +121,170 @@
 
     </main>
 
+    <script>
+    const container = document.getElementById("imageShow");
+
+    fetch('https://shoeslab.id/v1/gallery')
+    .then((response) => {
+        if (!response.ok) {
+        throw new Error('Gagal mengambil data dari API');
+        }
+        return response.json();
+    })
+    .then((data) => {
+        data.data.forEach((item) => {
+            const itemDiv = document.createElement("div");
+            itemDiv.className = item.size === "big" ? "col-lg-8 col-md-6 items info-shadow" : "col-lg-4 col-md-6 items info-shadow";
+            itemDiv.style.position = "absolute";
+            itemDiv.style.left = "0px";
+            itemDiv.style.top = "0px";
+
+            const itemImgDiv = document.createElement("div");
+            itemImgDiv.className = "item-img";
+
+            const aLink = document.createElement("a");
+            aLink.href = item.link;
+            aLink.target = "_blank";
+            aLink.className = "imago wow animated fadeInUp";
+            aLink.style.visibility = "visible";
+
+            const innerDiv = document.createElement("div");
+            innerDiv.className = "inner wow animated fadeInUp";
+            innerDiv.style.visibility = "visible";
+
+            const img = document.createElement("img");
+            img.src = `https://shoeslab.id${item.path}`;
+            img.alt = "image";
+            img.className = "radius-5";
+
+            const infoDiv = document.createElement("div");
+            infoDiv.className = "info";
+
+            const h6 = document.createElement("h6");
+            const h6Link = document.createElement("a");
+            h6Link.href = item.link;
+            h6Link.target = "_blank"
+            h6Link.textContent = item.title;
+            h6.appendChild(h6Link);
+
+            const subTitle = document.createElement("span");
+            subTitle.className = "sub-title tag opacity-7 mb-0 mt-10";
+            const subTitleLink = document.createElement("a");
+            subTitleLink.href = item.link;
+            subTitleLink.target = "_blank"
+            subTitleLink.textContent = "View On Instagram";
+            subTitle.appendChild(subTitleLink);
+
+            innerDiv.appendChild(img);
+            aLink.appendChild(innerDiv);
+            itemImgDiv.appendChild(aLink);
+            infoDiv.appendChild(h6);
+            infoDiv.appendChild(subTitle);
+            itemImgDiv.appendChild(infoDiv);
+            itemDiv.appendChild(itemImgDiv);
+
+            container.appendChild(itemDiv);
+        })
+    })
+    .catch((error) => {
+        console.error('Kesalahan:', error);
+    });
+    </script>
+
 
     <?php
     include 'include/footer.php';
 ?>
+
+
+
+
+<!-- <div class="col-lg-4 col-md-6 items info-shadow mb-40"
+    style="position: absolute; left: 0px; top: 460px;">
+    <div class="item-img">
+        <a href="https://www.instagram.com/_shoeslab/?hl=en" class="imago wow animated fadeInUp"
+            style="visibility: visible;">
+            <div class="inner wow animated fadeInUp" style="visibility: visible;">
+                <img src="assets/img/gallery/2.jpg" alt="image" class="radius-5">
+            </div>
+        </a>
+        <div class="info">
+            <h6><a href="https://www.instagram.com/_shoeslab/?hl=en">Repair</a></h6>
+            <span class="sub-title tag opacity-7 mb-0 mt-10"><a
+                    href="https://www.instagram.com/_shoeslab/?hl=en">View On
+                    Instagram</a></span>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6 items info-shadow mb-40"
+    style="position: absolute; left: 459px; top: 460px;">
+    <div class="item-img">
+        <a href="https://www.instagram.com/_shoeslab/?hl=en" class="imago wow animated fadeInUp"
+            style="visibility: visible;">
+            <div class="inner wow animated fadeInUp" style="visibility: visible;">
+                <img src="assets/img/gallery/4.jpg" alt="image" class="radius-5">
+            </div>
+        </a>
+        <div class="info">
+            <h6><a href="https://www.instagram.com/_shoeslab/?hl=en">Repair</a></h6>
+            <span class="sub-title tag opacity-7 mb-0 mt-10"><a
+                    href="https://www.instagram.com/_shoeslab/?hl=en">View On
+                    Instagram</a></span>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6 items info-shadow mb-40"
+    style="position: absolute; left: 918px; top: 460px;">
+    <div class="item-img">
+        <a href="https://www.instagram.com/_shoeslab/?hl=en" class="imago wow animated fadeInUp"
+            style="visibility: visible;">
+            <div class="inner wow animated fadeInUp" style="visibility: visible;">
+                <img src="assets/img/gallery/6.jpg" alt="image" class="radius-5">
+            </div>
+        </a>
+        <div class="info">
+            <h6><a href="https://www.instagram.com/_shoeslab/?hl=en">Repaint</a></h6>
+            <span class="sub-title tag opacity-7 mb-0 mt-10"><a
+                    href="https://www.instagram.com/_shoeslab/?hl=en">View On
+                    Instagram</a></span>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-8 col-md-6 items info-shadow mb-40"
+    style="position: absolute; left: 0px; top: 920px;">
+    <div class="item-img">
+        <a href="https://www.instagram.com/_shoeslab/?hl=en" class="imago wow animated fadeInUp"
+            style="visibility: visible;">
+            <div class="inner wow animated fadeInUp" style="visibility: visible;">
+                <img src="assets/img/gallery/5.jpg" alt="image" class="radius-5">
+            </div>
+        </a>
+        <div class="info">
+            <h6><a href="https://www.instagram.com/_shoeslab/?hl=en">Deep Cleaning</a></h6>
+            <span class="sub-title tag opacity-7 mb-0 mt-10"><a
+                    href="https://www.instagram.com/_shoeslab/?hl=en">View On
+                    Instagram</a></span>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6 items info-shadow mb-40"
+    style="position: absolute; left: 918px; top: 920px;">
+    <div class="item-img">
+        <a href="https://www.instagram.com/_shoeslab/?hl=en" class="imago wow animated fadeInUp"
+            style="visibility: visible;">
+            <div class="inner wow animated fadeInUp" style="visibility: visible;">
+                <img src="assets/img/gallery/7.jpg" alt="image" class="radius-5">
+            </div>
+        </a>
+        <div class="info">
+            <h6><a href="https://www.instagram.com/_shoeslab/?hl=en">Deep Cleaning</a></h6>
+            <span class="sub-title tag opacity-7 mb-0 mt-10"><a
+                    href="https://www.instagram.com/_shoeslab/?hl=en">View On
+                    Instagram</a></span>
+        </div>
+    </div>
+</div> -->
