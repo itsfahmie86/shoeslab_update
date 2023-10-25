@@ -74,7 +74,7 @@
 
                     <div class="row  mb-40" id="imageShow">
 
-                        <div class="col-lg-4 col-md-6 items info-shadow mb-40"
+                        <!-- <div class="col-lg-4 col-md-6 items info-shadow mb-40"
                             style="position: absolute; left: 0px; top: 0px;">
                             <div class="item-img">
                                 <a href="https://www.instagram.com/_shoeslab/?hl=en" class="imago wow animated fadeInUp"
@@ -108,7 +108,7 @@
                                             Instagram</a></span>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                     </div>
 
