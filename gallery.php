@@ -134,7 +134,7 @@
     .then((data) => {
         data.data.forEach((item) => {
             const itemDiv = document.createElement("div");
-            itemDiv.className = item.size === "big" ? "col-lg-8 col-md-6 items info-shadow" : "col-lg-4 col-md-6 items info-shadow";
+            itemDiv.className = item.size === "big" ? "col-lg-8 col-md-6 items info-shadow mb-40" : "col-lg-4 col-md-6 items info-shadow mb-40";
             itemDiv.style.position = "absolute";
             itemDiv.style.left = "0px";
             itemDiv.style.top = "0px";
