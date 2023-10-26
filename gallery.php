@@ -1,6 +1,14 @@
 <?php
     include 'include/header.php';
     include 'include/navigation.php';
+
+    $base_url = 'https://shoeslab.id';
+    $limit = 3; // Ganti dengan jumlah item yang Anda inginkan
+    $startIndex = 0; // Ganti dengan halaman awal yang Anda inginkan
+
+    $response = file_get_contents("{$base_url}/v1/gallery?pageSize={$limit}&page={$startIndex}");
+
+    $data = json_decode($response, true);
 ?>
 
     <div class="progress-wrap cursor-pointer">
@@ -70,46 +78,24 @@
                     </div>
                 </div>
 
-                <div class="gallery sam-height" style="position: relative; height: 1380px;">
+                <div class="gallery sam-height" style="height: 1380px;">
 
-                    <div class="row  mb-40" id="imageShow">
-
-                        <!-- <div class="col-lg-4 col-md-6 items info-shadow mb-40"
-                            style="position: absolute; left: 0px; top: 0px;">
-                            <div class="item-img">
-                                <a href="https://www.instagram.com/_shoeslab/?hl=en" class="imago wow animated fadeInUp"
-                                    style="visibility: visible;">
-                                    <div class="inner wow animated fadeInUp" style="visibility: visible;">
-                                        <img src="assets/img/gallery/1.jpg" alt="image" class="radius-5">
-                                    </div>
-                                </a>
-                                <div class="info">
-                                    <h6><a href="https://www.instagram.com/_shoeslab/?hl=en">Premium Treatment</a></h6>
-                                    <span class="sub-title tag opacity-7 mb-0 mt-10"><a
-                                            href="https://www.instagram.com/_shoeslab/?hl=en">View On
-                                            Instagram</a></span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-8 col-md-6 items info-shadow mb-40"
-                            style="position: absolute; left: 459px; top: 0px;">
-                            <div class="item-img">
-                                <a href="https://www.instagram.com/_shoeslab/?hl=en" class="imago wow animated fadeInUp"
-                                    style="visibility: visible;">
-                                    <div class="inner wow animated fadeInUp" style="visibility: visible;">
-                                        <img src="assets/img/gallery/3.jpg" alt="image" class="radius-5">
-                                    </div>
-                                </a>
-                                <div class="info">
-                                    <h6><a href="https://www.instagram.com/_shoeslab/?hl=en">Deep Cleaning</a></h6>
-                                    <span class="sub-title tag opacity-7 mb-0 mt-10"><a
-                                            href="https://www.instagram.com/_shoeslab/?hl=en">View On
-                                            Instagram</a></span>
-                                </div>
-                            </div>
-                        </div> -->
-
+                    <div class="row mb-40">
+                    <?php
+                        // Loop melalui data yang telah diambil dari API
+                        foreach ($data['data'] as $item) {
+                            echo '<div class="col-lg-4 col-md-6 items info-shadow mb-40" style="position: absolute; left: 0px; top: 460px;">';
+                            echo '<div class="item-img">';
+                            echo '<a href="' . $item['link'] . '" class="imago wow animated fadeInUp" style="visibility: visible;">';
+                            echo '<div class="inner wow animated fadeInUp" style="visibility: visible;">';
+                            echo '<img src="' . $base_url . $item['path'] . '" alt="image" class="radius-5">';
+                            echo '</div></a>';
+                            echo '<div class="info">';
+                            echo '<h6><a href="' . $item['link'] . '">' . $item['title'] . '</a></h6>';
+                            echo '<span class="sub-title tag opacity-7 mb-0 mt-10"><a href="' . $item['link'] . '">View On Instagram</a></span>';
+                            echo '</div></div></div>';
+                        }
+                        ?>
                     </div>
 
                 </div>
@@ -121,75 +107,56 @@
 
     </main>
 
-    <script>
-    const container = document.getElementById("imageShow");
+    <div class="gallery sam-height">
+    <div class="row" id="imageShow"></div>
+</div>
 
-    fetch('https://shoeslab.id/v1/gallery')
-    .then((response) => {
-        if (!response.ok) {
-        throw new Error('Gagal mengambil data dari API');
-        }
-        return response.json();
-    })
-    .then((data) => {
-        data.data.forEach((item) => {
-            const itemDiv = document.createElement("div");
-            itemDiv.className = item.size === "big" ? "col-lg-8 col-md-6 items info-shadow mb-40" : "col-lg-4 col-md-6 items info-shadow mb-40";
-            itemDiv.style.position = "absolute";
-            itemDiv.style.left = "0px";
-            itemDiv.style.top = "0px";
+<script>
+    const base_url = 'https://shoeslab.id'    
+    const limit = 10; // Ganti dengan jumlah item yang Anda inginkan
+    const startIndex = 0; // Ganti dengan halaman awal yang Anda inginkan
 
-            const itemImgDiv = document.createElement("div");
-            itemImgDiv.className = "item-img";
+async function fetchData() {
+    try {
+        const response = await fetch(`${base_url}/v1/gallery?pageSize=${limit}&page=${startIndex}`);
+        const data = await response.json();
 
-            const aLink = document.createElement("a");
-            aLink.href = item.link;
-            aLink.target = "_blank";
-            aLink.className = "imago wow animated fadeInUp";
-            aLink.style.visibility = "visible";
+        const galleryContainer = document.querySelector('.gallery.sam-height');
+        const rowContainer = galleryContainer.querySelector('.row');
 
-            const innerDiv = document.createElement("div");
-            innerDiv.className = "inner wow animated fadeInUp";
-            innerDiv.style.visibility = "visible";
+        data.data.forEach(item => {
+            const colElement = document.createElement('div');
+            colElement.classList.add('col-lg-4', 'col-md-6', 'items', 'info-shadow', 'mb-40');
+            colElement.style.position = 'absolute';
+            colElement.style.left = '0px';
+            colElement.style.top = '460px';
 
-            const img = document.createElement("img");
-            img.src = `https://shoeslab.id${item.path}`;
-            img.alt = "image";
-            img.className = "radius-5";
+            colElement.innerHTML = `
+                <div class="item-img">
+                    <a href="${item.link}" class="imago wow animated fadeInUp" style="visibility: visible;">
+                        <div class="inner wow animated fadeInUp" style="visibility: visible;">
+                            <img src="${base_url + item.path}" alt="image" class="radius-5">
+                        </div>
+                    </a>
+                    <div class="info">
+                        <h6><a href="${item.link}">${item.title}</a></h6>
+                        <span class="sub-title tag opacity-7 mb-0 mt-10"><a href="${item.link}">View On Instagram</a></span>
+                    </div>
+                </div>
+            `;
 
-            const infoDiv = document.createElement("div");
-            infoDiv.className = "info";
+            rowContainer.appendChild(colElement);
+        });
+    } catch (error) {
+        console.error('Gagal mengambil data:', error);
+    }
+}
 
-            const h6 = document.createElement("h6");
-            const h6Link = document.createElement("a");
-            h6Link.href = item.link;
-            h6Link.target = "_blank"
-            h6Link.textContent = item.title;
-            h6.appendChild(h6Link);
+fetchData();
+// Panggil fungsi fetchData() untuk memuat data saat halaman dimuat.
 
-            const subTitle = document.createElement("span");
-            subTitle.className = "sub-title tag opacity-7 mb-0 mt-10";
-            const subTitleLink = document.createElement("a");
-            subTitleLink.href = item.link;
-            subTitleLink.target = "_blank"
-            subTitleLink.textContent = "View On Instagram";
-            subTitle.appendChild(subTitleLink);
+</script>
 
-            innerDiv.appendChild(img);
-            aLink.appendChild(innerDiv);
-            itemImgDiv.appendChild(aLink);
-            infoDiv.appendChild(h6);
-            infoDiv.appendChild(subTitle);
-            itemImgDiv.appendChild(infoDiv);
-            itemDiv.appendChild(itemImgDiv);
-
-            container.appendChild(itemDiv);
-        })
-    })
-    .catch((error) => {
-        console.error('Kesalahan:', error);
-    });
-    </script>
 
 
     <?php

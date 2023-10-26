@@ -150,7 +150,7 @@ include 'include/navigation.php';
             const imageB = document.getElementById('imageB');
             const blogDetailContainer = document.getElementById("blogDetailContainer");
 
-            bgImage.setAttribute('data-background', `${apiUrl}${blogDetail.blogImage}`);
+            await bgImage.setAttribute('data-background', `${apiUrl}${blogDetail.blogImage}`);
             imageB.src = `${apiUrl}${blogDetail.blogImage}`
             blogTitle.textContent = blogDetail.blogTitle
             blogDate.textContent = momentJs(blogDetail.createdAt)
