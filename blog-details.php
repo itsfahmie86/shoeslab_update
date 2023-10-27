@@ -3,124 +3,121 @@ include 'include/header.php';
 include 'include/navigation.php';
 ?>
 
-<main>
+    <main>
+            <!-- ==================== Start Slider ==================== -->
 
-        <!-- ==================== Start Slider ==================== -->
+            <header id="bgBlog" class="pg-header tpost bg-img parallaxie valign" data-background=""
+                data-overlay-dark="3" data-src="" >
+                <div class="container-xxl ontop">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="cont text-center mb-80">
+                                <h1 class="fw-700 mb-50" id="blogTitle"></h1>
+                                <div class="d-flex justify-content-center">
+                                    <div class="d-flex align-items-center">
+                                        <div class="item mr-30">
+                                            <div class="d-flex align-items-center">
+                                                <div class="f-img">
+                                                    <div class="img circle-60 mr-20">
+                                                        <img src="" id="imageB" alt="" class="circle-img">
+                                                    </div>
+                                                </div>
+                                                <!-- <div>
+                                                    <span><a href="blog-masonry-3col.html">By : Alex Martin</a></span>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <div class="item mr-30">
+                                            <span><a id="blogDate"></a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadw"></div>
+            </header>
 
-        <header class="pg-header tpost bg-img parallaxie valign" data-background=""
-            data-overlay-dark="3" data-src="" >
-            <div class="container ontop">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="cont text-center mb-80">
-                            <h1 class="fw-700 mb-50" id="blogTitle"></h1>
-                            <div class="d-flex justify-content-center">
-                                <div class="d-flex align-items-center">
-                                    <div class="item mr-30">
-                                        <div class="d-flex align-items-center">
-                                            <div class="f-img">
-                                                <div class="img circle-60 mr-20">
-                                                    <img src="" id="imageB" alt="" class="circle-img">
+            <!-- ==================== End Slider ==================== -->
+
+
+
+            <!-- ==================== Start Blog ==================== -->
+
+            <section class="blog section-padding pb-0">
+                <div class="container-xxl">
+                    <div class="">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-11">
+                                <div class="main-post">
+                                    <div class="item pb-60" id="blogDetailContainer"></div>
+                                    <!-- <div class="info-area flex mt-20 pb-20">
+                                        <div>
+                                            <div class="tags flex">
+                                                <div class="valign">
+                                                    <span>Tags :</span>
+                                                </div>
+                                                <div>
+                                                    <a href="blog-grid-clean.html">Tech</a>
+                                                    <a href="blog-grid-clean.html">Ravo</a>
                                                 </div>
                                             </div>
-                                            <!-- <div>
-                                                <span><a href="blog-masonry-3col.html">By : Alex Martin</a></span>
-                                            </div> -->
                                         </div>
-                                    </div>
-                                    <div class="item mr-30">
-                                        <span><a id="blogDate"></a></span>
-                                    </div>
+                                        <div class="ml-auto">
+                                            <div class="share-icon flex">
+                                                <div class="valign">
+                                                    <span>Share :</span>
+                                                </div>
+                                                <div>
+                                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                                    <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                                                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                    
+                                    <!-- <div class="next-prv-post flex mt-50">
+                                        <div class="thumb-post bg-img" data-background="assets/img/blog/b/b4.jpg">
+                                            <a href="blog-post.html">
+                                                <span class="fz-12 text-u ls1 main-color mb-15"><i class="pe-7s-angle-left"></i>
+                                                    Prev Post</span>
+                                                <h6 class="fw-600 fz-16">Ways to quickly traffic to <br> your website.</h6>
+                                            </a>
+                                        </div>
+                                        <div id="nextButton" class="thumb-post ml-auto text-right bg-img"
+                                            data-background="assets/img/blog/b/b5.jpg">
+                                            <a href="blog-post.html">
+                                                <span class="fz-12 text-u ls1 main-color mb-15">Next Post <i
+                                                        class="pe-7s-angle-right"></i></span>
+                                                <h6 class="fw-600 fz-16">How to Handle Your Good Employee.</h6>
+                                            </a>
+                                        </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="shadw"></div>
-        </header>
 
-        <!-- ==================== End Slider ==================== -->
-
-
-
-        <!-- ==================== Start Blog ==================== -->
-
-        <section class="blog section-padding pb-0">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-11">
-                        <div class="main-post">
-                            <div class="item pb-60" id="blogDetailContainer"></div>
-                            <div class="info-area flex mt-20 pb-20">
-                                <!-- <div>
-                                    <div class="tags flex">
-                                        <div class="valign">
-                                            <span>Tags :</span>
-                                        </div>
-                                        <div>
-                                            <a href="blog-grid-clean.html">Tech</a>
-                                            <a href="blog-grid-clean.html">Ravo</a>
-                                        </div>
-                                    </div>
-                                </div> -->
-                                <div class="ml-auto">
-                                    <div class="share-icon flex">
-                                        <div class="valign">
-                                            <span>Share :</span>
-                                        </div>
-                                        <div>
-                                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                                            <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
-                                            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-                                        </div>
-                                    </div>
+                    <div class="recent-posts blog-overlay section-padding mt-100">
+                        <div class="">
+                            <div class="col-lg-11">
+                                <div class="mb-60">
+                                    <h4>Recent Posts</h4>
                                 </div>
                             </div>
-                            
-                            <!-- <div class="next-prv-post flex mt-50">
-                                <div class="thumb-post bg-img" data-background="assets/img/blog/b/b4.jpg">
-                                    <a href="blog-post.html">
-                                        <span class="fz-12 text-u ls1 main-color mb-15"><i class="pe-7s-angle-left"></i>
-                                            Prev Post</span>
-                                        <h6 class="fw-600 fz-16">Ways to quickly traffic to <br> your website.</h6>
-                                    </a>
-                                </div>
-                                <div id="nextButton" class="thumb-post ml-auto text-right bg-img"
-                                    data-background="assets/img/blog/b/b5.jpg">
-                                    <a href="blog-post.html">
-                                        <span class="fz-12 text-u ls1 main-color mb-15">Next Post <i
-                                                class="pe-7s-angle-right"></i></span>
-                                        <h6 class="fw-600 fz-16">How to Handle Your Good Employee.</h6>
-                                    </a>
-                                </div>
-                            </div> -->
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="recent-posts blog-overlay sub-bg section-padding mt-100">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-11">
-                            <div class="mb-60">
-                                <h4>Recent Posts</h4>
+                        <div class="    ">
+                            <div class="col-lg-11" >
+                                <div class="row" id="recentBlog"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center">
-                        <div class="col-lg-11" >
-                            <div class="row" id="recentBlog"></div>
-                        </div>
-                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- ==================== End Blog ==================== -->
-
-
+            <!-- ==================== End Blog ==================== -->
     </main>
 
     <script>
@@ -146,11 +143,12 @@ include 'include/navigation.php';
 
             const blogTitle = document.getElementById("blogTitle");
             const blogDate = document.getElementById("blogDate");
-            const bgImage = document.querySelector('[data-background=""]');
+            // const bgImage = document.querySelector('.bgBlog');
+            const bgImage = document.getElementById('bgBlog').style.backgroundImage=`url(${apiUrl}${blogDetail.blogImage})`;
             const imageB = document.getElementById('imageB');
             const blogDetailContainer = document.getElementById("blogDetailContainer");
 
-            await bgImage.setAttribute('data-background', `${apiUrl}${blogDetail.blogImage}`);
+            // await bgImage.setAttribute('data-background', `${apiUrl}${blogDetail.blogImage}`);
             imageB.src = `${apiUrl}${blogDetail.blogImage}`
             blogTitle.textContent = blogDetail.blogTitle
             blogDate.textContent = momentJs(blogDetail.createdAt)
