@@ -1,14 +1,6 @@
 <?php
     include 'include/header.php';
     include 'include/navigation.php';
-
-    $base_url = 'https://shoeslab.id';
-    $limit = 3; // Ganti dengan jumlah item yang Anda inginkan
-    $startIndex = 0; // Ganti dengan halaman awal yang Anda inginkan
-
-    $response = file_get_contents("{$base_url}/v1/gallery?pageSize={$limit}&page={$startIndex}");
-
-    $data = json_decode($response, true);
 ?>
 
     <div class="progress-wrap cursor-pointer">
@@ -77,55 +69,13 @@
                         </div>
                     </div>
                 </div>
+                <div class="" style="position: relative;">
 
-                <div class="gallery sam-height" style="height: 1380px;">
-
-                    <div class="row mb-40" id="template-images">
-                        <!-- Looping component start -->
-                        <?php
-                        // Loop melalui data yang telah diambil dari API
-                        foreach ($data['data'] as $item) {
-                            echo '<div class="col-lg-4 col-md-6 items info-shadow mb-40" style="position: absolute; left: 0px; top: 460px;">';
-                            echo '<div class="item-img">';
-                            echo '<a href="' . $item['link'] . '" class="imago wow animated fadeInUp" style="visibility: visible;">';
-                            echo '<div class="inner wow animated fadeInUp" style="visibility: visible;">';
-                            echo '<img src="' . $base_url . $item['path'] . '" alt="image" class="radius-5 skeleton">';
-                            echo '</div></a>';
-                            echo '<div class="info">';
-                            echo '<h6><a href="' . $item['link'] . '">' . $item['title'] . '</a></h6>';
-                            echo '<span class="sub-title tag opacity-7 mb-0 mt-10"><a href="' . $item['link'] . '">View On Instagram</a></span>';
-                            echo '</div></div></div>';
-                        }
-                        ?>
-                        <!-- <div class="col-lg-4 col-md-6 items info-shadow mb-40"
-                            style="position: absolute; left: 0px; top: 0px;">
-                            <div class="item-img">
-                                <a href="" class="imago wow animated fadeInUp"
-                                    style="visibility: visible;">
-                                    <div class="inner wow animated fadeInUp" style="visibility: visible;">
-                                        <img id="images" src="assets/img/gallery/1.jpg" alt="image" class="radius-5 skeleton">
-                                    </div>
-                                </a>
-                                <div class="info">
-                                    <h6>
-                                        <a id="link1" href="https://www.instagram.com/_shoeslab/?hl=en">
-                                            Premium Treatment
-                                        </a>
-                                    </h6>
-                                    <span class="sub-title tag opacity-7 mb-0 mt-10">
-                                        <a
-                                            id="link2"
-                                            href="https://www.instagram.com/_shoeslab/?hl=en">View On
-                                            Instagram
-                                        </a>
-                                    </span>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- Looping component end -->
+                    <div class="row mb-40" id="showImages">
                     </div>
 
                 </div>
+
 
             </div>
         </section>
@@ -133,46 +83,84 @@
         <!-- ==================== End Slider ==================== -->
 
     </main>
-
-    <div class="gallery sam-height">
-    <div class="row" id="imageShow"></div>
 </div>
 
-<!-- <script>
+<script>
     let currentIndex = 0
     const loadAmount = 3
     const base_url = 'https://shoeslab.id'    
     const limit = 10; // Ganti dengan jumlah item yang Anda inginkan
     const startIndex = 0; // Ganti dengan halaman awal yang Anda inginkan
-    const blogs = document.getElementById("showImages")
-    const link = await fetch(`${base_url}/v1/gallery`);
+    const galleryContainer = document.getElementById("showImages")
 
-    function populateData() {
-        // Panggil API untuk mendapatkan data
-        // Misalnya, menggunakan fetch() untuk mengambil data JSON dari API
-        fetch(link)
-            .then(response => response.json())
-            .then(data => {
-                data.data.forEach(image=> {
-                    document.getElementById('images').src = image.path;
-                    document.getElementById('link1').href = image.link;
-                    document.getElementById('link1').innerText = image.title;
-                    document.getElementById('link2').href = image.link;
-                    document.getElementById('link2').innerText = 'show';
-                    
-                });
-            })
-            .catch(error => {
-                console.error('Terjadi kesalahan saat mengambil data dari API:', error);
-            });
+    async function fetchData(currentIndex, nextIndex) {
+        try {
+            const response = await fetch(`${base_url}/v1/gallery`);
+            if (!response.ok) {
+            throw new Error("Gagal mengambil produk");
+            }
+            const data = await response.json();
+            return data;
+        } catch (error) {
+            console.error(error);
+            return [];
+        }
+    }
+    
+    async function showGallery(galleries) {
+        galleries.data.forEach((gallery) => {
+        const galleryElement = document.createElement("div");
+        galleryElement.className = "col-lg-4 col-md-6 items info-shadow mb-40";
+        galleryElement.innerHTML = `
+            <div class="item-img" style="height: 350px!important;">
+                <a href="${gallery.link}" target="_blank" class="imago wow animated fadeInUp"
+                    style="visibility: visible;">
+                    <div class="inner wow animated fadeInUp" style="height: 350px!important; style="visibility: visible;">
+                        <img id="images" src="${base_url + gallery.path}" alt="image" class="radius-5">
+                    </div>
+                </a>
+                <div class="info">
+                    <h6>
+                        <a id="link1" href="${gallery.link}" target="_blank">
+                            ${gallery.title}
+                        </a>
+                    </h6>
+                    <span class="sub-title tag opacity-7 mb-0 mt-10">
+                        <a
+                            id="link2"
+                            href="${gallery.link}" target="_blank">View Details
+                        </a>
+                    </span>
+                </div>
+            </div>
+        `;
+
+        galleryContainer.appendChild(galleryElement);
+        });
     }
 
-    // Panggil fungsi populateData() untuk mengisi elemen-elemen
-    populateData();
+    async function handleLoadMore() {
+    const nextIndex = currentIndex + loadAmount;
+    const gallery = await fetchData(currentIndex, nextIndex);
+    showGallery(gallery);
+    if (gallery.data.length < loadAmount) {
+        loadMoreButton.style.display = "none";
+    }
 
-</script> -->
+    currentIndex = nextIndex;
+    }
 
-<!-- <style>
+    // Tampilkan 3 elemen pertama saat halaman dimuat
+    document.addEventListener("DOMContentLoaded", () => {
+    handleLoadMore()
+    })
+
+    // Tambahkan event listener ke tombol "Load More"
+    loadMoreButton.addEventListener("click", handleLoadMore)
+
+</script>
+
+<style>
     .skeleton {
         animation: skeleton-loading 1s linear infinite alternate;
     }
@@ -186,7 +174,7 @@
         }
     }
 
-</style> -->
+</style>
 
 
     <?php
