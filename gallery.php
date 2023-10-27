@@ -10,6 +10,7 @@
 
     $data = json_decode($response, true);
 ?>
+?>
 
     <div class="progress-wrap cursor-pointer">
         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
@@ -80,15 +81,16 @@
 
                 <div class="gallery sam-height" style="height: 1380px;">
 
-                    <div class="row mb-40">
-                    <?php
+                    <div class="row mb-40" id="template-images">
+                        <!-- Looping component start -->
+                        <?php
                         // Loop melalui data yang telah diambil dari API
                         foreach ($data['data'] as $item) {
                             echo '<div class="col-lg-4 col-md-6 items info-shadow mb-40" style="position: absolute; left: 0px; top: 460px;">';
                             echo '<div class="item-img">';
                             echo '<a href="' . $item['link'] . '" class="imago wow animated fadeInUp" style="visibility: visible;">';
                             echo '<div class="inner wow animated fadeInUp" style="visibility: visible;">';
-                            echo '<img src="' . $base_url . $item['path'] . '" alt="image" class="radius-5">';
+                            echo '<img src="' . $base_url . $item['path'] . '" alt="image" class="radius-5 skeleton">';
                             echo '</div></a>';
                             echo '<div class="info">';
                             echo '<h6><a href="' . $item['link'] . '">' . $item['title'] . '</a></h6>';
@@ -96,6 +98,32 @@
                             echo '</div></div></div>';
                         }
                         ?>
+                        <!-- <div class="col-lg-4 col-md-6 items info-shadow mb-40"
+                            style="position: absolute; left: 0px; top: 0px;">
+                            <div class="item-img">
+                                <a href="" class="imago wow animated fadeInUp"
+                                    style="visibility: visible;">
+                                    <div class="inner wow animated fadeInUp" style="visibility: visible;">
+                                        <img id="images" src="assets/img/gallery/1.jpg" alt="image" class="radius-5 skeleton">
+                                    </div>
+                                </a>
+                                <div class="info">
+                                    <h6>
+                                        <a id="link1" href="https://www.instagram.com/_shoeslab/?hl=en">
+                                            Premium Treatment
+                                        </a>
+                                    </h6>
+                                    <span class="sub-title tag opacity-7 mb-0 mt-10">
+                                        <a
+                                            id="link2"
+                                            href="https://www.instagram.com/_shoeslab/?hl=en">View On
+                                            Instagram
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- Looping component end -->
                     </div>
 
                 </div>
@@ -111,147 +139,57 @@
     <div class="row" id="imageShow"></div>
 </div>
 
-<script>
+<!-- <script>
+    let currentIndex = 0
+    const loadAmount = 3
     const base_url = 'https://shoeslab.id'    
     const limit = 10; // Ganti dengan jumlah item yang Anda inginkan
     const startIndex = 0; // Ganti dengan halaman awal yang Anda inginkan
+    const blogs = document.getElementById("showImages")
+    const link = await fetch(`${base_url}/v1/gallery`);
 
-async function fetchData() {
-    try {
-        const response = await fetch(`${base_url}/v1/gallery?pageSize=${limit}&page=${startIndex}`);
-        const data = await response.json();
-
-        const galleryContainer = document.querySelector('.gallery.sam-height');
-        const rowContainer = galleryContainer.querySelector('.row');
-
-        data.data.forEach(item => {
-            const colElement = document.createElement('div');
-            colElement.classList.add('col-lg-4', 'col-md-6', 'items', 'info-shadow', 'mb-40');
-            colElement.style.position = 'absolute';
-            colElement.style.left = '0px';
-            colElement.style.top = '460px';
-
-            colElement.innerHTML = `
-                <div class="item-img">
-                    <a href="${item.link}" class="imago wow animated fadeInUp" style="visibility: visible;">
-                        <div class="inner wow animated fadeInUp" style="visibility: visible;">
-                            <img src="${base_url + item.path}" alt="image" class="radius-5">
-                        </div>
-                    </a>
-                    <div class="info">
-                        <h6><a href="${item.link}">${item.title}</a></h6>
-                        <span class="sub-title tag opacity-7 mb-0 mt-10"><a href="${item.link}">View On Instagram</a></span>
-                    </div>
-                </div>
-            `;
-
-            rowContainer.appendChild(colElement);
-        });
-    } catch (error) {
-        console.error('Gagal mengambil data:', error);
+    function populateData() {
+        // Panggil API untuk mendapatkan data
+        // Misalnya, menggunakan fetch() untuk mengambil data JSON dari API
+        fetch(link)
+            .then(response => response.json())
+            .then(data => {
+                data.data.forEach(image=> {
+                    document.getElementById('images').src = image.path;
+                    document.getElementById('link1').href = image.link;
+                    document.getElementById('link1').innerText = image.title;
+                    document.getElementById('link2').href = image.link;
+                    document.getElementById('link2').innerText = 'show';
+                    
+                });
+            })
+            .catch(error => {
+                console.error('Terjadi kesalahan saat mengambil data dari API:', error);
+            });
     }
-}
 
-fetchData();
-// Panggil fungsi fetchData() untuk memuat data saat halaman dimuat.
+    // Panggil fungsi populateData() untuk mengisi elemen-elemen
+    populateData();
 
-</script>
+</script> -->
 
+<style>
+    .skeleton {
+        animation: skeleton-loading 1s linear infinite alternate;
+    }
+
+    @keyframes skeleton-loading {
+        0% {
+            background-color: hsl(200, 20%, 80%);
+        }
+        100% {
+            background-color: hsl(200, 20%, 95%);
+        }
+    }
+
+</style>
 
 
     <?php
     include 'include/footer.php';
 ?>
-
-
-
-
-<!-- <div class="col-lg-4 col-md-6 items info-shadow mb-40"
-    style="position: absolute; left: 0px; top: 460px;">
-    <div class="item-img">
-        <a href="https://www.instagram.com/_shoeslab/?hl=en" class="imago wow animated fadeInUp"
-            style="visibility: visible;">
-            <div class="inner wow animated fadeInUp" style="visibility: visible;">
-                <img src="assets/img/gallery/2.jpg" alt="image" class="radius-5">
-            </div>
-        </a>
-        <div class="info">
-            <h6><a href="https://www.instagram.com/_shoeslab/?hl=en">Repair</a></h6>
-            <span class="sub-title tag opacity-7 mb-0 mt-10"><a
-                    href="https://www.instagram.com/_shoeslab/?hl=en">View On
-                    Instagram</a></span>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-4 col-md-6 items info-shadow mb-40"
-    style="position: absolute; left: 459px; top: 460px;">
-    <div class="item-img">
-        <a href="https://www.instagram.com/_shoeslab/?hl=en" class="imago wow animated fadeInUp"
-            style="visibility: visible;">
-            <div class="inner wow animated fadeInUp" style="visibility: visible;">
-                <img src="assets/img/gallery/4.jpg" alt="image" class="radius-5">
-            </div>
-        </a>
-        <div class="info">
-            <h6><a href="https://www.instagram.com/_shoeslab/?hl=en">Repair</a></h6>
-            <span class="sub-title tag opacity-7 mb-0 mt-10"><a
-                    href="https://www.instagram.com/_shoeslab/?hl=en">View On
-                    Instagram</a></span>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-4 col-md-6 items info-shadow mb-40"
-    style="position: absolute; left: 918px; top: 460px;">
-    <div class="item-img">
-        <a href="https://www.instagram.com/_shoeslab/?hl=en" class="imago wow animated fadeInUp"
-            style="visibility: visible;">
-            <div class="inner wow animated fadeInUp" style="visibility: visible;">
-                <img src="assets/img/gallery/6.jpg" alt="image" class="radius-5">
-            </div>
-        </a>
-        <div class="info">
-            <h6><a href="https://www.instagram.com/_shoeslab/?hl=en">Repaint</a></h6>
-            <span class="sub-title tag opacity-7 mb-0 mt-10"><a
-                    href="https://www.instagram.com/_shoeslab/?hl=en">View On
-                    Instagram</a></span>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-8 col-md-6 items info-shadow mb-40"
-    style="position: absolute; left: 0px; top: 920px;">
-    <div class="item-img">
-        <a href="https://www.instagram.com/_shoeslab/?hl=en" class="imago wow animated fadeInUp"
-            style="visibility: visible;">
-            <div class="inner wow animated fadeInUp" style="visibility: visible;">
-                <img src="assets/img/gallery/5.jpg" alt="image" class="radius-5">
-            </div>
-        </a>
-        <div class="info">
-            <h6><a href="https://www.instagram.com/_shoeslab/?hl=en">Deep Cleaning</a></h6>
-            <span class="sub-title tag opacity-7 mb-0 mt-10"><a
-                    href="https://www.instagram.com/_shoeslab/?hl=en">View On
-                    Instagram</a></span>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-4 col-md-6 items info-shadow mb-40"
-    style="position: absolute; left: 918px; top: 920px;">
-    <div class="item-img">
-        <a href="https://www.instagram.com/_shoeslab/?hl=en" class="imago wow animated fadeInUp"
-            style="visibility: visible;">
-            <div class="inner wow animated fadeInUp" style="visibility: visible;">
-                <img src="assets/img/gallery/7.jpg" alt="image" class="radius-5">
-            </div>
-        </a>
-        <div class="info">
-            <h6><a href="https://www.instagram.com/_shoeslab/?hl=en">Deep Cleaning</a></h6>
-            <span class="sub-title tag opacity-7 mb-0 mt-10"><a
-                    href="https://www.instagram.com/_shoeslab/?hl=en">View On
-                    Instagram</a></span>
-        </div>
-    </div>
-</div> -->
