@@ -69,11 +69,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="" style="position: relative;">
+                <div class="row" style="position: relative;">
 
                     <div class="row mb-40" id="showImages">
                     </div>
-
+                    <button
+                        type="button"
+                        class="butn butn-lg butn-bg radius-30 loadMore"
+                        style="width: auto; margin: 0 auto">
+                        Load More
+                    </button>
                 </div>
 
 
@@ -86,16 +91,16 @@
 </div>
 
 <script>
-    let currentIndex = 0
-    const loadAmount = 3
+    let currentIndex = 1
+    const loadAmount = 6
     const base_url = 'https://shoeslab.id'    
-    const limit = 10; // Ganti dengan jumlah item yang Anda inginkan
-    const startIndex = 0; // Ganti dengan halaman awal yang Anda inginkan
     const galleryContainer = document.getElementById("showImages")
+    const loadMoreButton = document.querySelector(".loadMore")
 
-    async function fetchData(currentIndex, nextIndex) {
+    async function fetchData(startIndex, endIndex) {
         try {
-            const response = await fetch(`${base_url}/v1/gallery`);
+            const limit = endIndex - startIndex;
+            const response = await fetch(`${base_url}/v1/gallery?limit=${limit}&page=${startIndex}`);
             if (!response.ok) {
             throw new Error("Gagal mengambil produk");
             }
@@ -140,19 +145,19 @@
     }
 
     async function handleLoadMore() {
-    const nextIndex = currentIndex + loadAmount;
-    const gallery = await fetchData(currentIndex, nextIndex);
-    showGallery(gallery);
-    if (gallery.data.length < loadAmount) {
-        loadMoreButton.style.display = "none";
-    }
+        const nextIndex = currentIndex + loadAmount;
+        const gallery = await fetchData(currentIndex, nextIndex);
+        showGallery(gallery);
+        if (gallery.data.length < loadAmount) {
+            loadMoreButton.style.display = "none";
+        }
 
-    currentIndex = nextIndex;
+        currentIndex++;
     }
 
     // Tampilkan 3 elemen pertama saat halaman dimuat
     document.addEventListener("DOMContentLoaded", () => {
-    handleLoadMore()
+        handleLoadMore()
     })
 
     // Tambahkan event listener ke tombol "Load More"
