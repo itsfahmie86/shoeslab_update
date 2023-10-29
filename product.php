@@ -120,23 +120,25 @@ include 'include/footer.php';
           }).format(number);
         }
         products.data.forEach((product) => {
-          const productElement = document.createElement("div");
+          const productElement = document.createElement("a");
           productElement.className = "product col-lg-4";
+          productElement.href = `${product?.productLink}`
+          productElement.target = '_blank'
           productElement.innerHTML = `
-            <div class="post-box bg-dark" style="height: 540px;">
-              <div class="img">
-                <img src="${base_url + product.productImage}" class="rounded" alt="variant products" style="max-height: 500px;" />
-              </div>
-              <div class="cont mt-30">
-                <div class="">
-                  <h6 class="">
-                    <a href="">${product?.productName}</a><br />
-                    <a href="" class="mt-15 fz-24" style="color: white">${rupiah(product.productPrice)}</a>
-                  </h6>
-                  <a href="${product.productLink}" target="_blank" class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
-                </div>
+          <div class="post-box bg-dark" style="height: 540px;">
+            <div class="img">
+              <img src="${base_url + product.productImage}" class="rounded" alt="variant products" style="max-height: 500px;" />
+            </div>
+            <div class="cont mt-30">
+              <div class="">
+                <h6 class="">
+                  <a>${product?.productName}</a><br />
+                  <a class="mt-15 fz-24" style="color: white">${rupiah(product?.productPrice)}</a>
+                </h6>
+                <a href="${product?.productLink}" target="_blank" class="mt-15 fz-13">Buy Now <i class="pe-7s-cart ml-5"></i></a>
               </div>
             </div>
+          </div>
           `;
 
           productsContainer.appendChild(productElement);

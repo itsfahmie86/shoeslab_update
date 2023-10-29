@@ -83,7 +83,7 @@ include 'include/navigation.php';
 ?>
 
 <script>
-    let currentIndex = 0
+    let currentIndex = 1
     const loadAmount = 3
     const blogs = document.getElementsByClassName("blogsContainer")
     const loadMoreButton = document.querySelector(".loadMore")
@@ -93,7 +93,7 @@ include 'include/navigation.php';
     async function fetchBlog(startIndex, endIndex) {
         try {
             const limit = endIndex - startIndex;
-            const response = await fetch(`${base_url}/v1/blog?pageSize=${limit}&page=${startIndex}`);
+            const response = await fetch(`${base_url}/v1/blog?limit=${limit}&page=${startIndex}`);
             if (!response.ok) {
             throw new Error("Gagal mengambil produk");
             }
@@ -140,19 +140,19 @@ include 'include/navigation.php';
 
     // Fungsi untuk menangani klik pada tombol "Load More"
     async function handleLoadMore() {
-    const nextIndex = currentIndex + loadAmount;
-    const blogs = await fetchBlog(currentIndex, nextIndex);
-    showBlogs(blogs);
-    if (blogs.data.length < loadAmount) {
-        loadMoreButton.style.display = "none";
-    }
+        const nextIndex = currentIndex + loadAmount;
+        const blogs = await fetchBlog(currentIndex, nextIndex);
+        showBlogs(blogs);
+        if (blogs.data.length < loadAmount) {
+            loadMoreButton.style.display = "none";
+        }
 
-    currentIndex = nextIndex;
+        currentIndex++;
     }
 
     // Tampilkan 3 elemen pertama saat halaman dimuat
     document.addEventListener("DOMContentLoaded", () => {
-    handleLoadMore()
+        handleLoadMore()
     })
 
     // Tambahkan event listener ke tombol "Load More"
