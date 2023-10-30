@@ -1,3 +1,5 @@
+
+
 <?php
 include 'include/header.php';
 include 'include/navigation.php';
@@ -224,7 +226,7 @@ include 'include/navigation.php';
                     <div class="row" style="margin-top: 120px;">
                         <h4 class="wow fw-700 mb-15 animated" style="visibility: visible;">Lainnya di Channel Kami</h4>
                         <div class="col-lg-6 col-md-6 wow fadeInUp" data-overlay-dark="2">
-                        <a href="https://www.youtube.com/watch?v=kgfJvIIMoZk&ab_channel=Shoeslab" target="_blank" class="pt-100 pb-100 mb-20" style="display: flex; align-items: center; justify-content: center; width: -webkit-fill-available; background-size: cover; background-repeat: no-repeat; background-image: url(https://img.youtube.com/vi/kgfJvIIMoZk/maxresdefault.jpg)" data-background="">
+                            <a href="https://www.youtube.com/watch?v=kgfJvIIMoZk&ab_channel=Shoeslab" target="_blank" class="pt-100 pb-100 mb-20" style="display: flex; align-items: center; justify-content: center; width: -webkit-fill-available; background-size: cover; background-repeat: no-repeat; background-image: url(https://img.youtube.com/vi/kgfJvIIMoZk/maxresdefault.jpg)" data-background="">
                                 <img src="assets/img/play-button.png" style="width:75px;height:75px;margin: 0 auto;opacity: 0.5;">
                             </a>
                             <!-- <div class="play-red"></div> -->
@@ -232,7 +234,7 @@ include 'include/navigation.php';
                         </div>
 
                         <div class="col-lg-6 col-md-6 wow fadeInUp" data-overlay-dark="2">
-                        <a href="https://www.youtube.com/watch?v=Lvc0Oc6jqYw&ab_channel=Shoeslab" target="_blank" class="pt-100 pb-100 mb-20" style="display: flex; align-items: center; justify-content: center; width: -webkit-fill-available; background-size: cover; background-repeat: no-repeat; background-image: url(https://img.youtube.com/vi/Lvc0Oc6jqYw/maxresdefault.jpg)" data-background="">
+                            <a href="https://www.youtube.com/watch?v=Lvc0Oc6jqYw&ab_channel=Shoeslab" target="_blank" class="pt-100 pb-100 mb-20" style="display: flex; align-items: center; justify-content: center; width: -webkit-fill-available; background-size: cover; background-repeat: no-repeat; background-image: url(https://img.youtube.com/vi/Lvc0Oc6jqYw/maxresdefault.jpg)" data-background="">
                                 <img src="assets/img/play-button.png" style="width:75px;height:75px;margin: 0 auto; opacity: 0.5;">
                             </a>
                             <!-- <div class="play-red"></div> -->
@@ -250,6 +252,14 @@ include 'include/navigation.php';
                                 <img src="assets/img/play-button.png" style="width:75px;height:75px;margin: 0 auto;opacity: 0.5;"></a>
                                 <!-- <div class="play-red"></div> -->
                         </div>
+                    </div>
+
+
+                    
+                    <div class="row" style="margin-top: 120px;">
+                    <h4 class="wow fw-700 mb-15 animated" style="visibility: visible;">Temukan Kami</h4><br>
+                    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-14f4cb40-2161-4adf-8eec-0e29e62901d2" data-elfsight-app-lazy></div>
                     </div>
 
                 </div>
@@ -297,23 +307,24 @@ include 'include/navigation.php';
               <!-- Slide-end -->
             </div>
   
-            <!-- <div class="tranding-slider-control">
-              <div class="swiper-button-prev slider-arrow">
-                <ion-icon name="arrow-back-outline"></ion-icon>
-              </div>
-              <div class="swiper-button-next slider-arrow">
-                <ion-icon name="arrow-forward-outline"></ion-icon>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div> -->
-  
+           
           </div>
         </div>
       </div>
     </section>
     <!-- ==================== End Swipper ==================== -->
 
+    <section class="ig-feed position-re o-hidden">
+      <div class="container-xxl">
+       
+                <div class="row" style="margin-top: 150px;">
+                    <h4 class="wow fw-700 mb-15 animated" style="visibility: visible;">Temukan Kami</h4><br>
+                    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+                <div class="elfsight-app-14f4cb40-2161-4adf-8eec-0e29e62901d2" data-elfsight-app-lazy></div>
 
+            </div> #
+      </div>
+    </section>
 
     <!-- ==================== Start Testimonials Items ==================== -->
 
