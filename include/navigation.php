@@ -27,6 +27,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link" href="product">Produk </a>
                 </li>
+<<<<<<< HEAD
                 <!-- <li class="nav-item dropdown">
                 <!-- <li class="nav-item dropdown">
                         <a class="nav-link" href="gallery">Galeri </a>
@@ -34,6 +35,18 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link" href="gallery">Gallery </a>
                 </li>
+=======
+<<<<<<< HEAD
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="gallery">Gallery </a>
+                </li>
+=======
+                <!-- <li class="nav-item dropdown">
+                <!-- <li class="nav-item dropdown">
+                        <a class="nav-link" href="gallery">Galeri </a>
+                    </li> -->
+>>>>>>> be798ab (l)
+>>>>>>> 1f8e59e (l)
                 <!-- <li class="nav-item">
                         <a class="nav-link" href="blog"> Blogs</a>
                     </li> -->
