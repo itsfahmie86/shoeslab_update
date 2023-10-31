@@ -224,38 +224,17 @@ include 'include/navigation.php';
 
                     <br><br>
                     <div class="row" style="margin-top: 120px">
+                    <div class="row" style="margin-top: 120px">
                         <h4 class="wow fw-700 mb-15 animated" style="visibility: visible;">Lainnya di Channel Kami</h4>
                         <div class="col-lg-6 col-md-6 wow fadeInUp" data-overlay-dark="2">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                            <a href="https://www.youtube.com/watch?v=kgfJvIIMoZk&ab_channel=Shoeslab" target="_blank" class="pt-100 pb-100 mb-20" style="display: flex; align-items: center; justify-content: center; width: -webkit-fill-available; background-size: cover; background-repeat: no-repeat; background-image: url(https://img.youtube.com/vi/kgfJvIIMoZk/maxresdefault.jpg)" data-background="">
-=======
                         <a href="https://www.youtube.com/watch?v=kgfJvIIMoZk&ab_channel=Shoeslab" target="_blank" class="mb-20" style="padding-bottom: 100px; padding-top: 170px; display: flex; align-items: center; justify-content: center; width: -webkit-fill-available; background-size: cover; background-repeat: no-repeat; background-image: url(https://img.youtube.com/vi/kgfJvIIMoZk/maxresdefault.jpg)" data-background="">
->>>>>>> a869274 (update)
-=======
-                        <a href="https://www.youtube.com/watch?v=kgfJvIIMoZk&ab_channel=Shoeslab" target="_blank" class="mb-20" style="padding-bottom: 100px; padding-top: 170px; display: flex; align-items: center; justify-content: center; width: -webkit-fill-available; background-size: cover; background-repeat: no-repeat; background-image: url(https://img.youtube.com/vi/kgfJvIIMoZk/maxresdefault.jpg)" data-background="">
-=======
-                            <a href="https://www.youtube.com/watch?v=kgfJvIIMoZk&ab_channel=Shoeslab" target="_blank" class="pt-100 pb-100 mb-20" style="display: flex; align-items: center; justify-content: center; width: -webkit-fill-available; background-size: cover; background-repeat: no-repeat; background-image: url(https://img.youtube.com/vi/kgfJvIIMoZk/maxresdefault.jpg)" data-background="">
->>>>>>> 3b319c5 (.)
->>>>>>> 346bb29 (.)
                                 <img src="assets/img/play-button.png" style="width:75px;height:75px;margin: 0 auto;opacity: 0.5;">
                             </a>
                             </a>
                         </div>
 
                         <div class="col-lg-6 col-md-6 wow fadeInUp" data-overlay-dark="2">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                            <a href="https://www.youtube.com/watch?v=Lvc0Oc6jqYw&ab_channel=Shoeslab" target="_blank" class="pt-100 pb-100 mb-20" style="display: flex; align-items: center; justify-content: center; width: -webkit-fill-available; background-size: cover; background-repeat: no-repeat; background-image: url(https://img.youtube.com/vi/Lvc0Oc6jqYw/maxresdefault.jpg)" data-background="">
-=======
-                        <a href="https://www.youtube.com/watch?v=Lvc0Oc6jqYw&ab_channel=Shoeslab" target="_blank" class="mb-20" style="padding-bottom: 100px; padding-top: 170px; display: flex; align-items: center; justify-content: center; width: -webkit-fill-available; background-size: cover; background-repeat: no-repeat; background-image: url(https://img.youtube.com/vi/Lvc0Oc6jqYw/maxresdefault.jpg)" data-background="">
->>>>>>> a869274 (update)
-=======
-                        <a href="https://www.youtube.com/watch?v=Lvc0Oc6jqYw&ab_channel=Shoeslab" target="_blank" class="mb-20" style="padding-bottom: 100px; padding-top: 170px; display: flex; align-items: center; justify-content: center; width: -webkit-fill-available; background-size: cover; background-repeat: no-repeat; background-image: url(https://img.youtube.com/vi/Lvc0Oc6jqYw/maxresdefault.jpg)" data-background="">
-=======
-                            <a href="https://www.youtube.com/watch?v=Lvc0Oc6jqYw&ab_channel=Shoeslab" target="_blank" class="pt-100 pb-100 mb-20" style="display: flex; align-items: center; justify-content: center; width: -webkit-fill-available; background-size: cover; background-repeat: no-repeat; background-image: url(https://img.youtube.com/vi/Lvc0Oc6jqYw/maxresdefault.jpg)" data-background="">
->>>>>>> 3b319c5 (.)
->>>>>>> 346bb29 (.)
+                        <a href="https://www.youtube.com/watch?v=Lvc0Oc6jqYw&ab_channel=Shoeslab" target="_blank" class="pt-100 pb-100 mb-20" style="display: flex; align-items: center; justify-content: center; width: -webkit-fill-available; background-size: cover; background-repeat: no-repeat; background-image: url(https://img.youtube.com/vi/Lvc0Oc6jqYw/maxresdefault.jpg)" data-background="">
                                 <img src="assets/img/play-button.png" style="width:75px;height:75px;margin: 0 auto; opacity: 0.5;">
                             </a>
                             </a>
