@@ -27,12 +27,9 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link" href="product">Produk </a>
                 </li>
-                <!-- <li class="nav-item dropdown">
-                        <a class="nav-link" href="gallery">Galeri </a>
-                    </li> -->
-                <!-- <li class="nav-item">
-                        <a class="nav-link" href="status">Status</a>
-                    </li> -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="gallery">Gallery </a>
+                </li>
                 <li class="nav-item">
                         <a class="nav-link" href="blog"> Blogs</a>
                     </li>

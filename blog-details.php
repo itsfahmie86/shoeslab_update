@@ -3,48 +3,50 @@ include 'include/header.php';
 include 'include/navigation.php';
 ?>
 
-<main>
+    <main>
+            <!-- ==================== Start Slider ==================== -->
 
-        <!-- ==================== Start Slider ==================== -->
-
-        <header class="pg-header tpost bg-img parallaxie valign" data-background=""
-            data-overlay-dark="3" data-src="" >
-            <div class="container ontop">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="cont text-center mb-80">
-                            <h1 class="fw-700 mb-50" id="blogTitle"></h1>
-                            <div class="d-flex justify-content-center">
-                                <div class="d-flex align-items-center">
-                                    <div class="item mr-30">
-                                        <div class="d-flex align-items-center">
-                                            <div class="f-img">
-                                                <div class="img circle-60 mr-20">
-                                                    <img src="" id="imageB" alt="" class="circle-img">
+            <header id="bgBlog" class="pg-header tpost bg-img parallaxie valign" data-background="assets/img/blog/b/p2.jpg"
+                data-overlay-dark="3">
+                <div class="container-xxl ontop">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="cont text-center mb-80">
+                                <h1 class="fw-700 mb-50">Creative advertising in <br> our life became a info noise</h1>
+                                <div class="d-flex justify-content-center">
+                                    <div class="d-flex align-items-center">
+                                        <div class="item mr-30">
+                                            <div class="d-flex align-items-center">
+                                                <div class="f-img">
+                                                    <div class="img circle-60 mr-20">
+                                                        <img src="assets/img/blog/a1.jpg" alt="" class="circle-img">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span><a href="blog-masonry-3col.html">By : Alex Martin</a></span>
                                                 </div>
                                             </div>
-                                            <!-- <div>
-                                                <span><a href="blog-masonry-3col.html">By : Alex Martin</a></span>
-                                            </div> -->
                                         </div>
+                                        <div class="item mr-30">
+                                            <span><a href="blog-masonry-3col.html"> 30 august 2021</a></span>
                                     </div>
-                                    <div class="item mr-30">
-                                        <span><a id="blogDate"></a></span>
+                                    <div class="item">
+                                        <span><a href="blog-masonry-3col.html"> WordPress</a></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="shadw"></div>
-        </header>
+                <div class="shadw"></div>
+            </header>
 
-        <!-- ==================== End Slider ==================== -->
-
+            <!-- ==================== End Slider ==================== -->
 
 
-        <!-- ==================== Start Blog ==================== -->
+
+            <!-- ==================== Start Blog ==================== -->
 
         <section class="blog section-padding pb-0">
             <div class="container">
@@ -118,9 +120,7 @@ include 'include/navigation.php';
             </div>
         </section>
 
-        <!-- ==================== End Blog ==================== -->
-
-
+            <!-- ==================== End Blog ==================== -->
     </main>
 
     <script>

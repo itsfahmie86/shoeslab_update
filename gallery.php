@@ -22,7 +22,7 @@
 
 
     <main>
-        <header class="pg-header style2 bg-img parallaxie valign" data-background="assets/img/slider/g1.jpg"
+        <header class="pg-header style2 bg-img parallaxie valign" data-background="assets/img/slider/1.jpg"
             data-overlay-dark="6">
             <div class="container-xxl ontop">
                 <div class="row">
@@ -69,140 +69,18 @@
                         </div>
                     </div>
                 </div>
+                <div class="row" style="position: relative;">
 
-                <div class="gallery sam-height" style="position: relative; height: 1380px;">
-
-                    <div class="row">
-
-                        <div class="col-lg-4 col-md-6 items info-shadow mb-40"
-                            style="position: absolute; left: 0px; top: 0px;">
-                            <div class="item-img">
-                                <a href="https://www.instagram.com/_shoeslab/?hl=en" class="imago wow animated fadeInUp"
-                                    style="visibility: visible;">
-                                    <div class="inner wow animated fadeInUp" style="visibility: visible;">
-                                        <img src="assets/img/gallery/1.jpg" alt="image" class="radius-5">
-                                    </div>
-                                </a>
-                                <div class="info">
-                                    <h6><a href="https://www.instagram.com/_shoeslab/?hl=en">Premium Treatment</a></h6>
-                                    <span class="sub-title tag opacity-7 mb-0 mt-10"><a
-                                            href="https://www.instagram.com/_shoeslab/?hl=en">View On
-                                            Instagram</a></span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-8 col-md-6 items info-shadow mb-40"
-                            style="position: absolute; left: 459px; top: 0px;">
-                            <div class="item-img">
-                                <a href="https://www.instagram.com/_shoeslab/?hl=en" class="imago wow animated fadeInUp"
-                                    style="visibility: visible;">
-                                    <div class="inner wow animated fadeInUp" style="visibility: visible;">
-                                        <img src="assets/img/gallery/3.jpg" alt="image" class="radius-5">
-                                    </div>
-                                </a>
-                                <div class="info">
-                                    <h6><a href="https://www.instagram.com/_shoeslab/?hl=en">Deep Cleaning</a></h6>
-                                    <span class="sub-title tag opacity-7 mb-0 mt-10"><a
-                                            href="https://www.instagram.com/_shoeslab/?hl=en">View On
-                                            Instagram</a></span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 items info-shadow mb-40"
-                            style="position: absolute; left: 0px; top: 460px;">
-                            <div class="item-img">
-                                <a href="https://www.instagram.com/_shoeslab/?hl=en" class="imago wow animated fadeInUp"
-                                    style="visibility: visible;">
-                                    <div class="inner wow animated fadeInUp" style="visibility: visible;">
-                                        <img src="assets/img/gallery/2.jpg" alt="image" class="radius-5">
-                                    </div>
-                                </a>
-                                <div class="info">
-                                    <h6><a href="https://www.instagram.com/_shoeslab/?hl=en">Repair</a></h6>
-                                    <span class="sub-title tag opacity-7 mb-0 mt-10"><a
-                                            href="https://www.instagram.com/_shoeslab/?hl=en">View On
-                                            Instagram</a></span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 items info-shadow mb-40"
-                            style="position: absolute; left: 459px; top: 460px;">
-                            <div class="item-img">
-                                <a href="https://www.instagram.com/_shoeslab/?hl=en" class="imago wow animated fadeInUp"
-                                    style="visibility: visible;">
-                                    <div class="inner wow animated fadeInUp" style="visibility: visible;">
-                                        <img src="assets/img/gallery/4.jpg" alt="image" class="radius-5">
-                                    </div>
-                                </a>
-                                <div class="info">
-                                    <h6><a href="https://www.instagram.com/_shoeslab/?hl=en">Repair</a></h6>
-                                    <span class="sub-title tag opacity-7 mb-0 mt-10"><a
-                                            href="https://www.instagram.com/_shoeslab/?hl=en">View On
-                                            Instagram</a></span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 items info-shadow mb-40"
-                            style="position: absolute; left: 918px; top: 460px;">
-                            <div class="item-img">
-                                <a href="https://www.instagram.com/_shoeslab/?hl=en" class="imago wow animated fadeInUp"
-                                    style="visibility: visible;">
-                                    <div class="inner wow animated fadeInUp" style="visibility: visible;">
-                                        <img src="assets/img/gallery/6.jpg" alt="image" class="radius-5">
-                                    </div>
-                                </a>
-                                <div class="info">
-                                    <h6><a href="https://www.instagram.com/_shoeslab/?hl=en">Repaint</a></h6>
-                                    <span class="sub-title tag opacity-7 mb-0 mt-10"><a
-                                            href="https://www.instagram.com/_shoeslab/?hl=en">View On
-                                            Instagram</a></span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-8 col-md-6 items info-shadow mb-40"
-                            style="position: absolute; left: 0px; top: 920px;">
-                            <div class="item-img">
-                                <a href="https://www.instagram.com/_shoeslab/?hl=en" class="imago wow animated fadeInUp"
-                                    style="visibility: visible;">
-                                    <div class="inner wow animated fadeInUp" style="visibility: visible;">
-                                        <img src="assets/img/gallery/5.jpg" alt="image" class="radius-5">
-                                    </div>
-                                </a>
-                                <div class="info">
-                                    <h6><a href="https://www.instagram.com/_shoeslab/?hl=en">Deep Cleaning</a></h6>
-                                    <span class="sub-title tag opacity-7 mb-0 mt-10"><a
-                                            href="https://www.instagram.com/_shoeslab/?hl=en">View On
-                                            Instagram</a></span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 items info-shadow mb-40"
-                            style="position: absolute; left: 918px; top: 920px;">
-                            <div class="item-img">
-                                <a href="https://www.instagram.com/_shoeslab/?hl=en" class="imago wow animated fadeInUp"
-                                    style="visibility: visible;">
-                                    <div class="inner wow animated fadeInUp" style="visibility: visible;">
-                                        <img src="assets/img/gallery/7.jpg" alt="image" class="radius-5">
-                                    </div>
-                                </a>
-                                <div class="info">
-                                    <h6><a href="https://www.instagram.com/_shoeslab/?hl=en">Deep Cleaning</a></h6>
-                                    <span class="sub-title tag opacity-7 mb-0 mt-10"><a
-                                            href="https://www.instagram.com/_shoeslab/?hl=en">View On
-                                            Instagram</a></span>
-                                </div>
-                            </div>
-                        </div>
-
+                    <div class="row mb-40" id="showImages">
                     </div>
-
+                    <button
+                        type="button"
+                        class="butn butn-lg butn-bg radius-30 loadMore"
+                        style="width: auto; margin: 0 auto">
+                        Load More
+                    </button>
                 </div>
+
 
             </div>
         </section>
@@ -210,6 +88,98 @@
         <!-- ==================== End Slider ==================== -->
 
     </main>
+</div>
+
+<script>
+    let currentIndex = 1
+    const loadAmount = 6
+    const base_url = 'https://shoeslab.id'    
+    const galleryContainer = document.getElementById("showImages")
+    const loadMoreButton = document.querySelector(".loadMore")
+
+    async function fetchData(startIndex, endIndex) {
+        try {
+            const limit = endIndex - startIndex;
+            const response = await fetch(`${base_url}/v1/gallery?limit=${limit}&page=${startIndex}`);
+            if (!response.ok) {
+            throw new Error("Gagal mengambil produk");
+            }
+            const data = await response.json();
+            return data;
+        } catch (error) {
+            console.error(error);
+            return [];
+        }
+    }
+    
+    async function showGallery(galleries) {
+        galleries.data.forEach((gallery) => {
+        const galleryElement = document.createElement("div");
+        galleryElement.className = "col-lg-4 col-md-6 items info-shadow mb-40";
+        galleryElement.innerHTML = `
+            <div class="item-img" style="height: 350px!important;">
+                <a href="${gallery.link}" target="_blank" class="imago wow animated fadeInUp"
+                    style="visibility: visible;">
+                    <div class="inner wow animated fadeInUp" style="height: 350px!important; style="visibility: visible;">
+                        <img id="images" src="${base_url + gallery.path}" alt="image" class="radius-5">
+                    </div>
+                </a>
+                <div class="info">
+                    <h6>
+                        <a id="link1" href="${gallery.link}" target="_blank">
+                            ${gallery.title}
+                        </a>
+                    </h6>
+                    <span class="sub-title tag opacity-7 mb-0 mt-10">
+                        <a
+                            id="link2"
+                            href="${gallery.link}" target="_blank">View Details
+                        </a>
+                    </span>
+                </div>
+            </div>
+        `;
+
+        galleryContainer.appendChild(galleryElement);
+        });
+    }
+
+    async function handleLoadMore() {
+        const nextIndex = currentIndex + loadAmount;
+        const gallery = await fetchData(currentIndex, nextIndex);
+        showGallery(gallery);
+        if (gallery.data.length < loadAmount) {
+            loadMoreButton.style.display = "none";
+        }
+
+        currentIndex++;
+    }
+
+    // Tampilkan 3 elemen pertama saat halaman dimuat
+    document.addEventListener("DOMContentLoaded", () => {
+        handleLoadMore()
+    })
+
+    // Tambahkan event listener ke tombol "Load More"
+    loadMoreButton.addEventListener("click", handleLoadMore)
+
+</script>
+
+<style>
+    .skeleton {
+        animation: skeleton-loading 1s linear infinite alternate;
+    }
+
+    @keyframes skeleton-loading {
+        0% {
+            background-color: hsl(200, 20%, 80%);
+        }
+        100% {
+            background-color: hsl(200, 20%, 95%);
+        }
+    }
+
+</style>
 
 
     <?php
