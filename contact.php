@@ -128,7 +128,7 @@ include 'include/navigation.php';
             <div class="row justify-content-center">
                 <div class="col-lg-9">
                     <div class="text-center mt-50">
-                        <h4>info_shoeslab@gmail.com</h4>
+                        <h4>shoeslab27@gmail.com</h4>
                         <h5 class="mt-10 main-color"><a>+62 855-2454-4731</a></h5>
                     </div>
                 </div>
