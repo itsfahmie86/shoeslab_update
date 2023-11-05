@@ -224,29 +224,34 @@ include 'include/navigation.php';
                     <div class="row" style="margin-top: 120px">
                         <h4 class="wow fw-700 mb-15 animated" style="visibility: visible;">Lainnya di Channel Kami</h4>
                         <div class="col-lg-6 col-md-6 wow fadeInUp" data-overlay-dark="2">
-                        <a href="https://www.youtube.com/watch?v=kgfJvIIMoZk&ab_channel=Shoeslab" target="_blank" class="mb-20" style="padding-bottom: 100px; padding-top: 170px; display: flex; align-items: center; justify-content: center; width: -webkit-fill-available; background-size: cover; background-repeat: no-repeat; background-image: url(https://img.youtube.com/vi/kgfJvIIMoZk/maxresdefault.jpg)" data-background="">
+                        <a href="https://www.youtube.com/watch?v=kgfJvIIMoZk&ab_channel=Shoeslab" target="_blank" class="mb-20 youtube" style="background-image: url(https://img.youtube.com/vi/kgfJvIIMoZk/maxresdefault.jpg)" data-background="">
                                 <img src="assets/img/play-button.png" style="width:75px;height:75px;margin: 0 auto;opacity: 0.5;">
                             </a>
                             </a>
                         </div>
 
                         <div class="col-lg-6 col-md-6 wow fadeInUp" data-overlay-dark="2">
-                        <a href="https://www.youtube.com/watch?v=Lvc0Oc6jqYw&ab_channel=Shoeslab" target="_blank" class="mb-20" style="padding-bottom: 100px; padding-top: 170px; display: flex; align-items: center; justify-content: center; width: -webkit-fill-available; background-size: cover; background-repeat: no-repeat; background-image: url(https://img.youtube.com/vi/Lvc0Oc6jqYw/maxresdefault.jpg)" data-background="">
+                        <a href="https://www.youtube.com/watch?v=Lvc0Oc6jqYw&ab_channel=Shoeslab" target="_blank" class="mb-20 youtube" style="background-image: url(https://img.youtube.com/vi/Lvc0Oc6jqYw/maxresdefault.jpg)" data-background="">
                                 <img src="assets/img/play-button.png" style="width:75px;height:75px;margin: 0 auto; opacity: 0.5;">
                             </a>
                             </a>
                         </div>
 
                         <div class="col-lg-6 col-md-6 wow fadeInUp" data-overlay-dark="2">
-                        <a href="https://www.youtube.com/watch?v=NvbnDd5vVtE&ab_channel=Shoeslab" target="_blank" class="mb-20" style="padding-bottom: 100px; padding-top: 170px; display: flex; align-items: center; justify-content: center; width: -webkit-fill-available; background-size: cover; background-repeat: no-repeat; background-image: url(https://img.youtube.com/vi/NvbnDd5vVtE/maxresdefault.jpg)" data-background="">
+                        <a href="https://www.youtube.com/watch?v=NvbnDd5vVtE&ab_channel=Shoeslab" target="_blank" class="mb-20 youtube" style="background-image: url(https://img.youtube.com/vi/NvbnDd5vVtE/maxresdefault.jpg)" data-background="">
                                 <img src="assets/img/play-button.png" style="width:75px;height:75px;margin: 0 auto;opacity: 0.5;"></a>
                         </div>
 
                         <div class="col-lg-6 col-md-6 wow fadeInUp" data-overlay-dark="2">
-                        <a href="https://www.youtube.com/watch?v=nIvp7JDr8Mk&t=38s&ab_channel=Shoeslab" target="_blank" class="bg-img valign mb-20" style="padding-bottom: 100px; padding-top: 170px; display: flex; align-items: center; justify-content: center; width: -webkit-fill-available; background-size: cover; background-repeat: no-repeat; background-image: url(https://img.youtube.com/vi/nIvp7JDr8Mk/maxresdefault.jpg)" data-background="" data-background="">
+                        <a href="https://www.youtube.com/watch?v=nIvp7JDr8Mk&t=38s&ab_channel=Shoeslab" target="_blank" class="bg-img valign mb-20 youtube" style="background-image: url(https://img.youtube.com/vi/nIvp7JDr8Mk/maxresdefault.jpg)" data-background="" data-background="">
                                 <img src="assets/img/play-button.png" style="width:75px;height:75px;margin: 0 auto;opacity: 0.5;"></a>
                         </div>
                     </div>
+                    <br><br>
+                    <div class="row" style="margin-top: 150px;">
+                    <h4 class="wow fw-700 mb-15 animated" style="visibility: visible;">Temukan Kami</h4><br>
+                    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-14f4cb40-2161-4adf-8eec-0e29e62901d2" data-elfsight-app-lazy></div>
 
                 </div>
             </div>
@@ -447,3 +452,31 @@ include 'include/navigation.php';
 <?php
 include 'include/footer.php';
 ?>
+
+<style>
+    @media only screen and (min-width: 768px) {
+        .youtube {
+            padding-bottom: 100px; 
+            padding-top: 170px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            width: -webkit-fill-available; 
+            background-size: cover; 
+            background-repeat: no-repeat;     
+        }
+    }
+
+    @media only screen and (max-width: 767px) { 
+        .youtube {
+                padding-bottom: 30px; 
+                padding-top: 90px; 
+                display: flex; 
+                align-items: center; 
+                justify-content: center; 
+                width: -webkit-fill-available; 
+                background-size: cover; 
+                background-repeat: no-repeat;     
+            }
+    }
+</style>
